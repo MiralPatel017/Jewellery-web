@@ -1,0 +1,402 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "img": "/men/ring1.png",
+            "subimg1": "/men/ring-1-1.png",
+            "subimg2": "/men/ring-1-2.png",
+            "subimg3": "/men/ring-1-3.png",
+            "subimg4": "/men/ring-1-4.png",
+            "name": "Beats Of Heart Diamond Band Ring",
+            "price": 486.8,
+            "ct": "Ring"
+        },
+        {
+            "id": 2,
+            "img": "/men/ring2.png",
+            "subimg1": "/men/ring-2-1.png",
+            "subimg2": "/men/ring-2-2.png",
+            "subimg3": "/men/ring-2-3.png",
+            "subimg4": "/men/ring-2-4.png",
+            "name": "Rylee Rose Gold Diamond Ring",
+            "price": 865.4,
+            "ct": "Ring"
+        },
+        {
+            "id": 3,
+            "img": "/men/ring3.png",
+            "subimg1": "/men/ring-3-1.png",
+            "subimg2": "/men/ring-3-2.png",
+            "subimg3": "/men/ring-3-3.png",
+            "subimg4": "/men/ring-3-4.png",
+            "name": "Garry Diamond Band Ring",
+            "price": 339.5,
+            "ct": "Ring"
+        },
+        {
+            "id": 4,
+            "img": "/men/ring4.png",
+            "subimg1": "/men/ring-4-1.png",
+            "subimg2": "/men/ring-4-2.png",
+            "subimg3": "/men/ring-4-3.png",
+            "subimg4": "/men/ring-4-4.png",
+            "name": "Yuvik Gold Diamond Band Ring",
+            "price": 635.7,
+            "ct": "Ring"
+        },
+        {
+            "id": 5,
+            "img": "/men/ring5.png",
+            "subimg1": "/men/ring-1-1.png",
+            "subimg2": "/men/ring-1-2.png",
+            "subimg3": "/men/ring-1-3.png",
+            "subimg4": "/men/ring-1-4.png",
+            "name": "Nevin Gold Band Ring",
+            "price": 256.7,
+            "ct": "Ring"
+        },
+        {
+            "id": 6,
+            "img": "/men/ring6.png",
+            "subimg1": "/men/ring-2-1.png",
+            "subimg2": "/men/ring-2-2.png",
+            "subimg3": "/men/ring-2-3.png",
+            "subimg4": "/men/ring-2-4.png",
+            "name": "Crystal Hues Diamond Band For Him",
+            "price": 584.3,
+            "ct": "Ring"
+        },
+        {
+            "id": 7,
+            "img": "/men/ring7.png",
+            "subimg1": "/men/ring-3-1.png",
+            "subimg2": "/men/ring-3-2.png",
+            "subimg3": "/men/ring-3-3.png",
+            "subimg4": "/men/ring-3-4.png",
+            "name": "Refraction Beams Gold Ring",
+            "price": 698.3,
+            "ct": "Ring"
+        },
+        {
+            "id": 8,
+            "img": "/men/ring8.png",
+            "subimg1": "/men/ring-4-1.png",
+            "subimg2": "/men/ring-4-2.png",
+            "subimg3": "/men/ring-4-3.png",
+            "subimg4": "/men/ring-4-4.png",
+            "name": "Horace Platinum And Rose Gold Diamond Band ",
+            "price": 547.3,
+            "ct": "Ring"
+        },
+        {
+            "id": 9,
+            "img": "/men/ring9.png",
+            "subimg1": "/men/ring-1-1.png",
+            "subimg2": "/men/ring-1-2.png",
+            "subimg3": "/men/ring-1-3.png",
+            "subimg4": "/men/ring-1-4.png",
+            "name": "Otis Diamond Wedding Band For Him",
+            "price": 645.3,
+            "ct": "Ring"
+        },
+        {
+            "id": 10,
+            "img": "/men/chain1.png",
+            "subimg1": "/men/chain-1-1.png",
+            "subimg2": "/men/chain-1-2.png",
+            "subimg3": "/men/chain-1-3.png",
+            "subimg4": "/men/chain-1-4.png",
+            "name": "The Triumph Platinum Chain",
+            "price": 599.3,
+            "ct": "Chain"
+        },
+        {
+            "id": 11,
+            "img": "/men/chain2.png",
+            "subimg1": "/men/chain-2-1.png",
+            "subimg2": "/men/chain-2-2.png",
+            "subimg3": "/men/chain-2-3.png",
+            "subimg4": "/men/chain-2-4.png",
+            "name": "True Connection Platinum Chain",
+            "price": 458.2,
+            "ct": "Chain"
+        },
+        {
+            "id": 12,
+            "img": "/men/chain3.png",
+            "subimg1": "/men/chain-3-1.png",
+            "subimg2": "/men/chain-3-2.png",
+            "subimg3": "/men/chain-3-3.png",
+            "subimg4": "/men/chain-3-4.png",
+            "name": "Affirmation Platinum And Rose Gold Chain",
+            "price": 563.2,
+            "ct": "Chain"
+        },
+        {
+            "id": 13,
+            "img": "/men/chain4.png",
+            "subimg1": "/men/chain-4-1.png",
+            "subimg2": "/men/chain-4-2.png",
+            "subimg3": "/men/chain-4-3.png",
+            "subimg4": "/men/chain-4-4.png",
+            "name": "Vadim Gold Chain",
+            "price": 456.5,
+            "ct": "Chain"
+        },
+        {
+            "id": 14,
+            "img": "/men/chain5.png",
+            "subimg1": "/men/chain-1-1.png",
+            "subimg2": "/men/chain-1-2.png",
+            "subimg3": "/men/chain-1-3.png",
+            "subimg4": "/men/chain-1-4.png",
+            "name": "Rhyme N Rap Platinum And Rose Gold Chain",
+            "price": 236.5,
+            "ct": "Chain"
+        },
+        {
+            "id": 15,
+            "img": "/men/chain6.png",
+            "subimg1": "/men/chain-2-1.png",
+            "subimg2": "/men/chain-2-2.png",
+            "subimg3": "/men/chain-2-3.png",
+            "subimg4": "/men/chain-2-4.png",
+            "name": "Arhaan Gold Chain",
+            "price": 456.2,
+            "ct": "Chain"
+        },
+        {
+            "id": 16,
+            "img": "/men/chain7.png",
+            "subimg1": "/men/chain-3-1.png",
+            "subimg2": "/men/chain-3-2.png",
+            "subimg3": "/men/chain-3-3.png",
+            "subimg4": "/men/chain-3-4.png",
+            "name": "Radiant Glow Platinum And Rose Gold Chain",
+            "price": 456.5,
+            "ct": "Chain"
+        },
+        {
+            "id": 17,
+            "img": "/men/chain8.png",
+            "subimg1": "/men/chain-4-1.png",
+            "subimg2": "/men/chain-4-2.png",
+            "subimg3": "/men/chain-4-3.png",
+            "subimg4": "/men/chain-4-4.png",
+            "name": "Seraph Platinum And Rose Gold Chain",
+            "price": 466.2,
+            "ct": "Chain"
+        },
+        {
+            "id": 18,
+            "img": "/men/chain9.png",
+            "subimg1": "/men/chain-1-1.png",
+            "subimg2": "/men/chain-1-2.png",
+            "subimg3": "/men/chain-1-3.png",
+            "subimg4": "/men/chain-1-4.png",
+            "name": "Artistic Minimalism Platinum Chain",
+            "price": 789.5,
+            "ct": "Chain"
+        },
+        {
+            "id": 19,
+            "img": "/men/kada1.png",
+            "subimg1": "/men/kada-1-1.png",
+            "subimg2": "/men/kada-1-2.png",
+            "subimg3": "/men/kada-1-3.png",
+            "subimg4": "/men/kada-1-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION PLATINUM MOMENTUM BRACELET",
+            "price": 1526.2,
+            "ct": "Kadas"
+        },
+        {
+            "id": 20,
+            "img": "/men/kada2.png",
+            "subimg1": "/men/kada-2-1.png",
+            "subimg2": "/men/kada-2-2.png",
+            "subimg3": "/men/kada-2-3.png",
+            "subimg4": "/men/kada-2-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION DUAL-TONE PLATINUM GRID BRACELET",
+            "price": 4656.5,
+            "ct": "Kadas"
+        },
+        {
+            "id": 21,
+            "img": "/men/kada3.png",
+            "subimg1": "/men/kada-3-1.png",
+            "subimg2": "/men/kada-3-2.png",
+            "subimg3": "/men/kada-3-3.png",
+            "subimg4": "/men/kada-3-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION PLATINUM CUBE FUSION BRACELET",
+            "price": 4856.3,
+            "ct": "Kadas"
+        },
+        {
+            "id": 22,
+            "img": "/men/kada4.png",
+            "subimg1": "/men/kada-4-1.png",
+            "subimg2": "/men/kada-4-2.png",
+            "subimg3": "/men/kada-4-3.png",
+            "subimg4": "/men/kada-4-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION PLATINUM GRID BRACELET",
+            "price": 965.6,
+            "ct": "Kadas"
+        },
+        {
+            "id": 23,
+            "img": "/men/kada5.png",
+            "subimg1": "/men/kada-1-1.png",
+            "subimg2": "/men/kada-1-2.png",
+            "subimg3": "/men/kada-1-3.png",
+            "subimg4": "/men/kada-1-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION DUAL-TONE PLATINUM GRID BRACELET",
+            "price": 4625.2,
+            "ct": "Kadas"
+        },
+        {
+            "id": 24,
+            "img": "/men/kada6.png",
+            "subimg1": "/men/kada-2-1.png",
+            "subimg2": "/men/kada-2-2.png",
+            "subimg3": "/men/kada-2-3.png",
+            "subimg4": "/men/kada-2-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION PLATINUM CUBE FUSION BRACELET",
+            "price": 485.3,
+            "ct": "Kadas"
+        },
+        {
+            "id": 25,
+            "img": "/men/kada7.png",
+            "subimg1": "/men/kada-3-1.png",
+            "subimg2": "/men/kada-3-2.png",
+            "subimg3": "/men/kada-3-3.png",
+            "subimg4": "/men/kada-3-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION PLATINUM CUBE FUSION BRACELET",
+            "price": 1653.3,
+            "ct": "Kadas"
+        },
+        {
+            "id": 26,
+            "img": "/men/kada8.png",
+            "subimg1": "/men/kada-4-1.png",
+            "subimg2": "/men/kada-4-2.png",
+            "subimg3": "/men/kada-4-3.png",
+            "subimg4": "/men/kada-4-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION PLATINUM GRID BRACELET",
+            "price": 528.3,
+            "ct": "Kadas"
+        },
+        {
+            "id": 27,
+            "img": "/men/kada9.png",
+            "subimg1": "/men/kada-1-1.png",
+            "subimg2": "/men/kada-1-2.png",
+            "subimg3": "/men/kada-1-3.png",
+            "subimg4": "/men/kada-1-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION PLATINUM CUBE FUSION BRACELET",
+            "price": 1652.3,
+            "ct": "Kadas"
+        },
+
+        {
+            "id": 28,
+            "img": "/men/bracelet1.png",
+            "subimg1": "/men/bracelet-1-1.png",
+            "subimg2": "/men/bracelet-1-2.png",
+            "subimg3": "/men/bracelet-1-3.png",
+            "subimg4": "/men/bracelet-1-4.png",
+            "name": "Simba Flexi Gold Bracelet For Men",
+            "price": 2365,
+            "ct": "Bracelet"
+        },
+        {
+            "id": 29,
+            "img": "/men/bracelet2.png",
+            "subimg1": "/men/bracelet-2-1.png",
+            "subimg2": "/men/bracelet-2-2.png",
+            "subimg3": "/men/bracelet-2-3.png",
+            "subimg4": "/men/bracelet-2-4.png",
+            "name": "Briar Flexi Gold Bracelet For Men",
+            "price": 1526,
+            "ct": "Bracelet"
+        },
+        {
+            "id": 30,
+            "img": "/men/bracelet3.png",
+            "subimg1": "/men/bracelet-3-1.png",
+            "subimg2": "/men/bracelet-3-2.png",
+            "subimg3": "/men/bracelet-3-3.png",
+            "subimg4": "/men/bracelet-3-4.png",
+            "name": "Omkara Flexi Gold Bracelet For Men",
+            "price": 5632,
+            "ct": "Bracelet"
+        },
+        {
+            "id": 31,
+            "img": "/men/bracelet4.png",
+            "subimg1": "/men/bracelet-4-1.png",
+            "subimg2": "/men/bracelet-4-2.png",
+            "subimg3": "/men/bracelet-4-3.png",
+            "subimg4": "/men/bracelet-4-4.png",
+            "name": "Omkara Flexi Gold Bracelet For Men",
+            "price": 4563,
+            "ct": "Bracelet"
+        },
+        {
+            "id": 32,
+            "img": "/men/bracelet5.png",
+            "subimg1": "/men/bracelet-1-1.png",
+            "subimg2": "/men/bracelet-1-2.png",
+            "subimg3": "/men/bracelet-1-3.png",
+            "subimg4": "/men/bracelet-1-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION DUAL-TONE PLATINUM BOND BRACELET",
+            "price": 4125,
+            "ct": "Bracelet"
+        },
+        {
+            "id": 33,
+            "img": "/men/bracelet6.png",
+            "subimg1": "/men/bracelet-2-1.png",
+            "subimg2": "/men/bracelet-2-2.png",
+            "subimg3": "/men/bracelet-2-3.png",
+            "subimg4": "/men/bracelet-2-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION DUAL-TONE PLATINUM BOLD LINKS BRACELET",
+            "price": 2364,
+            "ct": "Bracelet"
+        },
+        {
+            "id": 34,
+            "img": "/men/bracelet7.png",
+            "subimg1": "/men/bracelet-3-1.png",
+            "subimg2": "/men/bracelet-3-2.png",
+            "subimg3": "/men/bracelet-3-3.png",
+            "subimg4": "/men/bracelet-3-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION PLATINUM GRID BRACELET",
+            "price": 4856,
+            "ct": "Bracelet"
+        },
+        {
+            "id": 35,
+            "img": "/men/bracelet8.png",
+            "subimg1": "/men/bracelet-4-1.png",
+            "subimg2": "/men/bracelet-4-2.png",
+            "subimg3": "/men/bracelet-4-3.png",
+            "subimg4": "/men/bracelet-4-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION PLATINUM ANCHOR LINE BRACELET",
+            "price": 4521,
+            "ct": "Bracelet"
+        },
+        {
+            "id": 36,
+            "img": "/men/bracelet9.png",
+            "subimg1": "/men/bracelet-1-1.png",
+            "subimg2": "/men/bracelet-1-2.png",
+            "subimg3": "/men/bracelet-1-3.png",
+            "subimg4": "/men/bracelet-1-4.png",
+            "name": "THE MS DHONI SIGNATURE EDITION DUAL-TONE PLATINUM GRID BRACELET",
+            "price": 3256,
+            "ct": "Bracelet"
+        }
+        
+    ]
+}

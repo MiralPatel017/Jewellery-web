@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* Home page */
+.maincontainer {
+    background-image: url('home-main-container.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 100%;
+}
+
+.maintext {
+
+    font-family: 'Marcellus SC';
+}
+
+.maindiv:hover div img {
+    transform: scale(1.1);
+}
+
+.maindiv:hover div {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+}
+
+.maindiv:hover p {
+    color: #BE9A80;
+    font-weight: 600;
+}
+
+.hovercarddiv:hover .scalimg {
+    transform: scale(1.05);
+}
+
+.weddingdiv {
+    background-image: url('wedding-container.svg');
+    height: 440px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Fashion:hover img {
+    transform: scale(1.07);
+}
+
+.fesonimg {
+    background-image: url('fashion.svg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+@media (max-width: 500px) {
+    .fesonimghor{
+       height: 350px;
+    }  
+}
+
+.fesonimghor:hover .fesonimg {
+    animation: hoverani 0.3s forwards;
+}
+
+@keyframes hoverani {
+    0% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 105%;
+    }
+}
+
+.nightfallbg {
+    background-image: url('nightfall.svg');
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.swiper-pagination-bullet-active {
+    background-color: black !important;
+}
+
+/* end home page */
+
+
+/* About page */
+
+.about-main-container {
+    background-image: url('about-main-comtainer.svg');
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+@media (max-width: 768px) {
+    .about-main-container {
+        background-position: center;
+        height: 300px;
+    }
+}
+
+/* end aboute page */
+
+/* service page */
+.service-main-container {
+    background-image: url('servicesmaincontainer.svg');
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 430px) {
+    .service-main-container {
+        background-position: -500px 0px;
+    }
+}
+
+@media (max-width: 730px) {
+    .imagecenter {
+        justify-content: center;
+    }
+}
+
+.ourservices {
+    background: #BE9A807A;
+}
+
+.servicehover:hover img {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+.servicehover:hover p {
+    color: #BE9A80;
+}
+
+/* end service page */
+
+
+/* start contact page */
+.contact-main-container {
+
+    background-image: url('contact-main-container.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 525px;
+    width: 100%;
+}
+
+@media (max-width: 770px) {
+    .contact-main-container {
+        background-position: -250px 0px;
+        background-size: cover;
+        height: 500px;
+    }
+
+}
+
+.contacthover:hover .contactarrow {
+    transform: translateX(10px);
+}
+
+/* end contact page */
+
+
+/* start profile page */
+.profile-main-container {
+    background-image: url('profile-main-container.svg');
+    background-repeat: no-repeat;
+    height: 245px;
+    width: 100%;
+    background-size: 100%;
+}
+
+@media (max-width: 500px) {
+    .profile-main-container {
+        background-size: cover;
+        background-position: -1030px 0px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 770px) {
+    .profile-main-container {
+        background-size: cover;
+        height: 280px;
+    }
+}
+
+/* end profile page */
+
+
+/* start Categorie Page */
+
+.categorie-main-container {
+    background-image: url('categorie-main-container.svg');
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+}
+
+/* mobile */
+@media (max-width: 500px) {
+    .categorie-main-container {
+        background-size: cover;
+        background-position: -450px 0px;
+        height: 400px;
+    }
+}
+
+/* tab */
+@media (min-width: 500px) and (max-width: 770px) {
+    .categorie-main-container {
+        background-size: cover;
+        background-position: -180px 0px;
+        height: 400px;
+    }
+}
+
+/* mini screen */
+@media (min-width: 770px) and (max-width: 1030px) {
+    .categorie-main-container {
+        background-size: cover;
+        height: 450px;
+    }
+}
+
+/* end Categorie Page */
+
+/* start Product Details Page */
+
+.product-shadow{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 7px;
+}
+
+/* end Product Details Page */
