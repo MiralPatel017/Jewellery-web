@@ -1,6 +1,6 @@
 import React from 'react'
 import NavPage from './NavPage'
-import { LiaLongArrowAltRightSolid } from "react-icons/li";
+import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 import FooterPage from './FooterPage';
 const ContactPage = () => {
   return (

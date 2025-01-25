@@ -172,6 +172,9 @@
 .contacthover:hover .contactarrow {
     transform: translateX(10px);
 }
+.contacthover:hover .contactarrow img{
+    fill: #21393A;
+}
 
 /* end contact page */
 
