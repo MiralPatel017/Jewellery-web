@@ -18,42 +18,42 @@ const HomePage = () => {
     const categories = [
         {
             name: "Rings",
-            img: "Rings.png",
+            img: "/Rings.png",
             catg: "Ring"
         },
         {
             name: "Earrings",
-            img: "Earrings.png",
+            img: "/Earrings.png",
             catg: "Earrings"
         },
         {
             name: "Chain",
-            img: "Chain.png",
+            img: "/Chain.png",
             catg: "Necklace"
         },
         {
             name: "Neckless",
-            img: "Neckless.png",
+            img: "/Neckless.png",
             catg: "Necklace"
         },
         {
             name: "Bangles",
-            img: "Bangles.png",
+            img: "/Bangles.png",
             catg: "Bangles"
         },
         {
             name: "Bracelets",
-            img: "Bracelets.png",
+            img: "/Bracelets.png",
             catg: "Bracelet"
         },
         {
             name: "Gifts",
-            img: "Gifts.png",
+            img: "/Gifts.png",
             catg: "Ring"
         },
         {
             name: "Pendants",
-            img: "Pendants.png",
+            img: "/Pendants.png",
             catg: "Pendants"
         },
     ]
@@ -530,7 +530,7 @@ const HomePage = () => {
 
                                             {/* Like Button */}
                                             <button
-                                                className="absolute xl:top-6 lg:top-[20px] md:top-[24px] max-md:top-[15px] xl:right-[20px] lg:right-[15px] md:right-[25px] max-md:right-[12px]"
+                                                className="absolute xl:top-[30px] lg:top-[20px] md:top-[24px] max-md:top-[15px] xl:right-[30px] lg:right-[15px] md:right-[25px] max-md:right-[12px]"
                                                 onClick={() => regalhandleLikes(item.id)}
                                                 aria-label="Like Button"
                                             >
@@ -538,7 +538,7 @@ const HomePage = () => {
                                                     src={
                                                         regallikedProducts[item.id] ? "/fill-like.svg" : "/like.svg"
                                                     }
-                                                    className="lg:w-[17px] duration-300 max-md:w-[13.5px]"
+                                                    className="lg:w-[17px] xl:w-[20px] duration-300 max-md:w-[13.5px]"
                                                 />
                                             </button>
                                         </div>

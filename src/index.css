@@ -7,7 +7,7 @@
 
 /* Home page */
 .maincontainer {
-    background-image: url('home-main-container.svg');
+    background-image: url('/home-main-container.svg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 550px;
@@ -37,7 +37,7 @@
 }
 
 .weddingdiv {
-    background-image: url('wedding-container.svg');
+    background-image: url('/wedding-container.svg');
     height: 440px;
     width: 100%;
     background-size: cover;
@@ -50,7 +50,7 @@
 }
 
 .fesonimg {
-    background-image: url('fashion.svg');
+    background-image: url('/fashion.svg');
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@
 }
 
 .nightfallbg {
-    background-image: url('nightfall.svg');
+    background-image: url('/nightfall.svg');
     background-size: cover;
     height: 400px;
     width: 100%;
@@ -96,7 +96,7 @@
 /* About page */
 
 .about-main-container {
-    background-image: url('about-main-comtainer.svg');
+    background-image: url('/about-main-comtainer.svg');
     background-size: cover;
     height: 80vh;
     width: 100%;
@@ -116,7 +116,7 @@
 
 /* service page */
 .service-main-container {
-    background-image: url('servicesmaincontainer.svg');
+    background-image: url('/servicesmaincontainer.svg');
     height: 70vh;
     width: 100%;
     background-size: cover;
@@ -153,7 +153,7 @@
 /* start contact page */
 .contact-main-container {
 
-    background-image: url('contact-main-container.svg');
+    background-image: url('/contact-main-container.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 525px;
@@ -178,7 +178,7 @@
 
 /* start profile page */
 .profile-main-container {
-    background-image: url('profile-main-container.svg');
+    background-image: url('/profile-main-container.svg');
     background-repeat: no-repeat;
     height: 245px;
     width: 100%;
@@ -206,7 +206,7 @@
 /* start Categorie Page */
 
 .categorie-main-container {
-    background-image: url('categorie-main-container.svg');
+    background-image: url('/categorie-main-container.svg');
     background-repeat: no-repeat;
     height: 550px;
     width: 100%;
