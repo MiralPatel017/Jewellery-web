@@ -12,7 +12,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['react-icons/li'],
+      external: ['react-icons/li', 'react-icons/hi2'],
     },
   },
 });
