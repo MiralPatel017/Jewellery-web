@@ -18,16 +18,18 @@ const PaymentPage = () => {
     return (
         <div>
             {/* navbar */}
-            <div className='container shadow-md'>
-                <Navbar />
+            <div className="shadow-md bg-white w-full fixed top-0 z-50">
+                <div className='container'>
+                    <Navbar />
+                </div>
             </div>
 
             {/* main container */}
 
-            <div className='container mt-5'>
+            <div className='container mt-[130px]'>
 
                 {/* title */}
-                <div className='text-4xl max-md:text-center font-semibold max-md:font-bold'>
+                <div className='titlestyle max-md:text-center max-md:font-bold'>
                     Billing Details
                 </div>
 
@@ -88,7 +90,7 @@ const PaymentPage = () => {
                                 </div>
 
                                 {/* City, State, and Zip Code  */}
-                                <div className='grid grid-cols-3 max-md:grid-cols-2 gap-5'>
+                                <div className='grid grid-cols-3 max-md:grid-cols-2 gap-5 max-sm:grid-cols-1'>
 
                                     {/* City */}
                                     <div>
@@ -122,7 +124,7 @@ const PaymentPage = () => {
                                 <div className='max-md:w-full max-md:flex max-md:justify-center'>
                                     <Link to='/ThankYouPage'>
                                         <button
-                                            className=' text-secondary hover:text-white hover:bg-secondary border border-secondary px-[70px] py-2 font-semibold duration-300'
+                                            className=' text-secondary hover:text-white hover:bg-secondary border border-secondary px-[70px] py-2 font-semibold duration-300 max-sm:text-sm'
                                             type='submit'>
                                             Continue To Delivery
                                         </button>
@@ -147,7 +149,7 @@ const PaymentPage = () => {
                                 <div className='mt-5 space-y-5'>
 
                                     {/* title */}
-                                    <div className='text-[30px] font-semibold max-md:text-center'>
+                                    <div className='text-[30px] font-semibold max-md:text-center text-secondary'>
                                         Shipping Address
                                     </div>
 
@@ -157,7 +159,7 @@ const PaymentPage = () => {
                                     </div>
 
                                     {/* payment method */}
-                                    <div className='bg-[#F5F5F5] lg:px-16 lg:py-10 max-lg:px-10 max-lg:py-10'>
+                                    <div className='bg-[#F5F5F5] lg:px-12 lg:py-8 md:px-10 md:py-8 max-md:p-5'>
                                         <div className="">
                                             <h2 className="text-xl font-semibold mb-4">Payment Method</h2>
                                             <form>
@@ -184,10 +186,10 @@ const PaymentPage = () => {
 
                                                             {/* card image */}
                                                             <div className="grid grid-cols-4 max-md:grid-cols-2 md:space-x-2 max-md:gap-5 mb-2">
-                                                                <img src="/gpay.svg" alt="Google Pay" className="h-14" />
-                                                                <img src="/visa.svg" alt="Visa" className="h-14" />
-                                                                <img src="/paypal.svg" alt="PayPal" className="h-14" />
-                                                                <img src="/paypass.svg" alt="PayPass" className="h-14" />
+                                                                <img src="/gpay.svg" alt="Google Pay" className="h-14 max-md:mx-auto" />
+                                                                <img src="/visa.svg" alt="Visa" className="h-14 max-md:mx-auto" />
+                                                                <img src="/paypal.svg" alt="PayPal" className="h-14 max-md:mx-auto" />
+                                                                <img src="/paypass.svg" alt="PayPass" className="h-14 max-md:mx-auto" />
                                                             </div>
 
                                                             {/* card details input/form */}
@@ -306,7 +308,7 @@ const PaymentPage = () => {
                                 {/* first product */}
                                 <div className='mt-5 flex px-5 gap-2 items-center'>
                                     {/* product image */}
-                                    <div className="w-1/4 max-lg:p-[40px] max-md:p-0">
+                                    <div className="w-1/4 max-lg:p-[20px] max-md:p-0">
                                         <img
                                             src='/product-1.svg'
                                             alt="book image"
@@ -321,7 +323,7 @@ const PaymentPage = () => {
                                     </div>
 
                                     {/* product price */}
-                                    <div className="w-1/4 text-end max-lg:text-xl xl:text-lg max-xl:text-sm font-bold">
+                                    <div className="w-1/4 text-end max-lg:text-xl xl:text-lg max-xl:text-sm font-bold text-nowrap max-sm:text-base">
                                         548.3 $
                                     </div>
                                 </div>
@@ -329,11 +331,11 @@ const PaymentPage = () => {
                                 {/* second product */}
                                 <div className='mt-5 flex px-5 gap-2 items-center'>
                                     {/* product image */}
-                                    <div className="w-1/4 max-lg:p-[40px] max-md:p-0">
+                                    <div className="w-1/4 max-lg:p-[20px] max-md:p-0">
                                         <img
                                             src='/product-2.svg'
                                             alt="book image"
-                                            className="object-cover  border border-primary"
+                                            className="object-cover border border-primary"
                                         />
                                     </div>
                                     {/* product name */}
@@ -344,7 +346,7 @@ const PaymentPage = () => {
                                     </div>
 
                                     {/* product price */}
-                                    <div className="w-1/4 text-end max-lg:text-xl xl:text-lg max-xl:text-sm font-bold">
+                                    <div className="w-1/4 text-end max-lg:text-xl xl:text-lg max-xl:text-sm font-bold text-nowrap max-sm:text-base">
                                         468.8 $
                                     </div>
                                 </div>
@@ -363,7 +365,7 @@ const PaymentPage = () => {
                                     <div className='font-semibold text-gray-600'>
                                         Subtotal
                                     </div>
-                                    <div className='text-end max-lg:text-xl xl:text-lg max-xl:text-sm font-bold'>
+                                    <div className='text-end max-lg:text-xl xl:text-lg max-xl:text-sm font-bold text-nowrap max-sm:text-base'>
                                         1012.6 $
                                     </div>
                                 </div>
@@ -373,7 +375,7 @@ const PaymentPage = () => {
                                     <div className='font-semibold text-gray-600'>
                                         Discount (4%)
                                     </div>
-                                    <div className='text-end max-lg:text-xl xl:text-lg max-xl:text-sm font-bold text-red-500'>
+                                    <div className='text-end max-lg:text-xl xl:text-lg max-xl:text-sm font-bold text-red-500 text-nowrap max-sm:text-base'>
                                         30 $
                                     </div>
                                 </div>
@@ -390,7 +392,7 @@ const PaymentPage = () => {
                                     <div className='font-semibold text-gray-600'>
                                         Total
                                     </div>
-                                    <div className='text-end max-lg:text-xl xl:text-lg max-xl:text-sm font-bold'>
+                                    <div className='text-end max-lg:text-xl xl:text-lg max-xl:text-sm font-bold text-nowrap max-sm:text-base'>
                                         984.6 $
                                     </div>
                                 </div>

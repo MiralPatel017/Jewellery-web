@@ -7,12 +7,14 @@ const CartPage = () => {
     return (
         <div>
             {/* navbar */}
-            <div className=' container shadow-md'>
-                <Navbar />
+            <div className="shadow-md bg-white w-full fixed top-0 z-50">
+                <div className='container'>
+                    <Navbar />
+                </div>
             </div>
 
             {/* product details and order summary */}
-            <div className='container mt-[50px]'>
+            <div className='container mt-[80px]'>
                 <div className='flex max-lg:flex-wrap gap-10'>
                     {/* product details */}
                     <div className='lg:w-[70%] max-lg:w-full'>

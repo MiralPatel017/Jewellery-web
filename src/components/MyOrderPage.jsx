@@ -21,31 +21,31 @@ const MyOrderPage = () => {
             <div className='container mt-[80px]'>
 
                 {/* title */}
-                <div className='md:text-4xl max-md:text-3xl font-bold max-md:text-center'>
+                <div className='titlestyle text-secondary max-md:text-3xl max-md:text-center'>
                     My Order
                 </div>
 
                 {/* three button div */}
                 <div className='mt-7 bg-[#F5F5F5] p-2'>
-                    <div className='flex gap-5 max-md:text-[14px] max-md:justify-center max-md:py-5'>
+                    <div className='flex gap-5 max-md:text-[14px] max-sm:gap-3 max-md:justify-center max-md:py-5'>
 
                         {/* Shipping button */}
                         <button
-                            className={`border w-[200px] py-1 ${activeSection === 'onShipping' ? 'bg-secondary text-white' : ' border-secondary'}`}
+                            className={`border w-[200px] max-sm:text-xs py-1 ${activeSection === 'onShipping' ? 'bg-secondary text-white' : ' border-secondary'}`}
                             onClick={() => handleButtonClick('onShipping')}>
                             On Shipping
                         </button>
 
                         {/* completed button */}
                         <button
-                            className={`border w-[200px] py-1 ${activeSection === 'completed' ? 'bg-secondary text-white' : 'border-secondary'}`}
+                            className={`border w-[200px] max-sm:text-xs py-1 ${activeSection === 'completed' ? 'bg-secondary text-white' : 'border-secondary'}`}
                             onClick={() => handleButtonClick('completed')}>
                             Completed
                         </button>
 
                         {/* canceled button */}
                         <button
-                            className={`border w-[200px] py-1 ${activeSection === 'canceled' ? 'bg-secondary text-white' : 'border-secondary'}`}
+                            className={`border max-sm:text-xs w-[200px] py-1 ${activeSection === 'canceled' ? 'bg-secondary text-white' : 'border-secondary'}`}
                             onClick={() => handleButtonClick('canceled')}>
                             Canceled
                         </button>
@@ -72,7 +72,7 @@ const MyOrderPage = () => {
                                 <div className='md:w-[80%] max-md:w-[75%]'>
 
                                     {/* product name */}
-                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg'>
+                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg text-nowrap line-clamp-1'>
                                         Annalise Layered Diamond Necklace
                                     </div>
 
@@ -83,9 +83,9 @@ const MyOrderPage = () => {
                                         <div className='w-[80%] md:space-y-3 max-md:space-y-1 max-md:text-xs'>
 
                                             {/* Purity  */}
-                                            <p className='gap-1 flex'>
+                                            <p className='gap-1 flex text-nowrap line-clamp-1'>
                                                 Purity :
-                                                <p className='opacity-55'>
+                                                <p className='opacity-55 text-nowrap line-clamp-1'>
                                                     14K GOLD
                                                 </p>
                                             </p>
@@ -107,7 +107,7 @@ const MyOrderPage = () => {
 
                                         {/* price */}
                                         <div className='w-[20%]'>
-                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold '>
+                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold text-nowrap'>
                                                 548.3 $
                                             </p>
                                         </div>
@@ -133,7 +133,7 @@ const MyOrderPage = () => {
                                 <div className='md:w-[80%] max-md:w-[75%]'>
 
                                     {/* product name */}
-                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg'>
+                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg text-nowrap line-clamp-1'>
                                         Beats Of Heart Diamond Band Ring
                                     </div>
 
@@ -144,9 +144,9 @@ const MyOrderPage = () => {
                                         <div className='w-[80%] md:space-y-3 max-md:space-y-1 max-md:text-xs'>
 
                                             {/* Purity  */}
-                                            <p className='gap-1 flex'>
+                                            <p className='gap-1 flex text-nowrap line-clamp-1'>
                                                 Purity :
-                                                <p className='opacity-55'>
+                                                <p className='opacity-55 text-nowrap line-clamp-1'>
                                                     14K Gold and Diamod
                                                 </p>
                                             </p>
@@ -168,7 +168,7 @@ const MyOrderPage = () => {
 
                                         {/* price */}
                                         <div className='w-[20%]'>
-                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold '>
+                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold text-nowrap'>
                                                 468.8 $
                                             </p>
                                         </div>
@@ -187,7 +187,7 @@ const MyOrderPage = () => {
                             <div className='flex md:gap-7 max-md:gap-5 w-full'>
 
                                 {/* right image */}
-                                <div className='flex items-center md:mr-5'>
+                                <div className='flex items-center'>
                                     <img src="/right.png" alt="" />
                                 </div>
 
@@ -237,7 +237,7 @@ const MyOrderPage = () => {
 
                                         {/* price */}
                                         <div className='w-[20%] max-md:w-[50px]'>
-                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold '>
+                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold text-nowrap'>
                                                 548.3 $
                                             </p>
                                         </div>
@@ -251,10 +251,10 @@ const MyOrderPage = () => {
                             </div>
 
                             {/* second product */}
-                            <div className='flex md:gap-7 max-md:gap-5 w-full'>
+                            <div className='flex md:gap-7 max-md:gap-5 max-sm:gap-3 w-full'>
 
                                 {/* right image */}
-                                <div className='flex items-center md:mr-5'>
+                                <div className='flex items-center'>
                                     <img src="/right.png" alt="" />
                                 </div>
 
@@ -269,7 +269,7 @@ const MyOrderPage = () => {
                                 <div className='md:w-[80%] max-md:w-[75%]'>
 
                                     {/* product name */}
-                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg'>
+                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg line-clamp-1'>
                                         Beats Of Heart Diamond Band Ring
                                     </div>
 
@@ -280,11 +280,11 @@ const MyOrderPage = () => {
                                         <div className='w-[80%] md:space-y-3 max-md:space-y-1 max-md:text-xs'>
 
                                             {/* Purity  */}
-                                            <p className='gap-1 flex'>
+                                            <p className='gap-1 flex line-clamp-1'>
                                                 Purity :
-                                                <p className='opacity-55'>
+                                                <span className='opacity-55'>
                                                     14K Gold and Diamod
-                                                </p>
+                                                </span>
                                             </p>
                                             {/* qty */}
                                             <p className='flex gap-1'>
@@ -304,7 +304,7 @@ const MyOrderPage = () => {
 
                                         {/* price */}
                                         <div className='w-[20%] max-md:w-[50px]'>
-                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold '>
+                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold text-nowrap'>
                                                 468.8 $
                                             </p>
                                         </div>
@@ -322,8 +322,11 @@ const MyOrderPage = () => {
                             <div className='flex md:gap-7 max-md:gap-5 w-full'>
 
                                 {/* right image */}
-                                <div className='flex items-center md:mr-5'>
-                                    <img src="/wrong.png" alt="" />
+                                <div className='flex-wrap justify-center my-auto w-fit space-y-2'>
+                                    <img src="/wrong.png" alt="" className='mx-auto max-sm:w-6' />
+                                    <p className='text-red-500 max-md:text-xs'>
+                                        Canceled
+                                    </p>
                                 </div>
 
                                 {/* image */}
@@ -337,7 +340,7 @@ const MyOrderPage = () => {
                                 <div className='md:w-[80%] max-md:w-[75%]'>
 
                                     {/* product name */}
-                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg'>
+                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg line-clamp-1'>
                                         Annalise Layered Diamond Necklace
                                     </div>
 
@@ -372,7 +375,7 @@ const MyOrderPage = () => {
 
                                         {/* price */}
                                         <div className='w-[20%] max-md:w-[50px]'>
-                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold '>
+                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold text-nowrap'>
                                                 548.3 $
                                             </p>
                                         </div>
@@ -389,8 +392,11 @@ const MyOrderPage = () => {
                             <div className='flex md:gap-7 max-md:gap-5 w-full'>
 
                                 {/* right image */}
-                                <div className='flex items-center md:mr-5'>
-                                    <img src="/wrong.png" alt="" />
+                                <div className='flex-wrap items-center justify-center my-auto space-y-2'>
+                                    <img src="/wrong.png" alt="" className='mx-auto max-md:w-6' />
+                                    <p className='text-red-500 max-md:text-xs'>
+                                        Canceled
+                                    </p>
                                 </div>
 
                                 {/* image */}
@@ -404,7 +410,7 @@ const MyOrderPage = () => {
                                 <div className='md:w-[80%] max-md:w-[75%]'>
 
                                     {/* product name */}
-                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg'>
+                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg line-clamp-1'>
                                         Beats Of Heart Diamond Band Ring
                                     </div>
 
@@ -439,7 +445,7 @@ const MyOrderPage = () => {
 
                                         {/* price */}
                                         <div className='w-[20%] max-md:w-[50px]'>
-                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold '>
+                                            <p className='text-end max-md:text-sm max-md:font-bold font-semibold text-nowrap'>
                                                 468.8 $
                                             </p>
                                         </div>

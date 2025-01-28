@@ -200,7 +200,7 @@ const HomePage = () => {
     const [hoveredItem, setHoveredItem] = useState(null);
 
     // like and like
-    const [liked, setLiked] = React.useState(false);
+    const [liked, setLiked] = React.useState({});
     const [likedProducts, setLikedProducts] = React.useState({});
     const [regallikedProducts, setregalLikedProducts] = React.useState({});
     const [sortedProducts, setSortedProducts] = useState([]);
@@ -208,8 +208,11 @@ const HomePage = () => {
 
 
     // like and unlike handler
-    const handleLike = () => {
-        setLiked(!liked);
+    const handleLike = (productId) => {
+        setLiked((prevLikedProducts) => ({
+            ...prevLikedProducts,
+            [productId]: !prevLikedProducts[productId],
+        }));
     };
 
     const handleLikes = (productId) => {
@@ -226,7 +229,7 @@ const HomePage = () => {
         }));
     };
 
-    
+
 
     useEffect(() => {
         if (womenproducts?.data) {
@@ -234,7 +237,7 @@ const HomePage = () => {
         }
     }, [womenproducts]);
 
-    
+
 
     useEffect(() => {
         if (womenproducts?.data) {
@@ -245,15 +248,17 @@ const HomePage = () => {
     return (
         <div>
             {/* navbar */}
-            <div className='container shadow-md'>
-                <NavPage />
+            <div className="shadow-md bg-white w-full fixed top-0 z-50">
+                <div className='container'>
+                    <NavPage />
+                </div>
             </div>
 
             {/* main container */}
-            <div className='maincontainer flex max-lg:w-full max-lg:justify-center items-center mt-2 lg:pl-[150px] max-lg:px-5' >
+            <div className='maincontainer mt-[80px] flex max-lg:w-full max-xl:justify-center items-center xl:pl-[150px] max-lg:px-5' >
                 <div>
                     <div>
-                        <h1 className=' lg:text-[85px] lg:text-center max-lg:text-[40px] max-md:text-[30px] max-lg:text-center max-md:w-full font-bold maintext text-primary'>Bridal Jewellery</h1>
+                        <h1 className=' lg:text-[85px] xl:text-center max-lg:text-[40px] max-md:text-[30px] max-lg:text-center max-md:w-full font-bold maintext text-primary'>Bridal Jewellery</h1>
                         <hr className='border border-white w-[78%] lg:-mt-2 justify-center mx-auto' />
                         <h3 className='lg:text-[25px] mt-3 text-white text-center'>Elegance begins with the perfect jewel.</h3>
                         <div className='flex justify-center mt-5'>
@@ -268,14 +273,14 @@ const HomePage = () => {
             </div>
 
             {/* Categories , Engagement Rings and Regal Radiance Most Loved Jewellery sections */}
-            <div className='container'>
+            <div className='container mt-[50px]'>
 
                 {/* Categories section */}
-                <div className='grid grid-cols-8 max-lg:mx-auto max-lg:justify-around max-xl:grid-cols-4 max-md:grid-cols-2 max-lg:gap-5 mt-[50px] gap-3'>
+                <div className='grid grid-cols-8 max-xl:mx-auto max-lg:justify-around max-xl:grid-cols-4 max-md:grid-cols-2 max-lg:gap-5 gap-3'>
                     {
                         categories.map((category, index) => {
                             return (
-                                <div key={index} className="w-fit space-y-5">
+                                <div key={index} className="w-fit space-y-5 maindivs">
                                     <Link to={`/CategoriePage/${category.catg}`}>
                                         <div className="w-fit space-y-5 maindiv">
                                             {/* image */}
@@ -300,12 +305,12 @@ const HomePage = () => {
 
                     {/* title */}
                     <div>
-                        <h1 className='text-4xl underline text-center font-semibold max-md:text-[30px] underline-offset-[5px] duration-300'>Engagement  Rings</h1>
+                        <h1 className='titlestyle underline text-center underline-offset-[5px] duration-300'>Engagement  Rings</h1>
                     </div>
 
-                    <div className='grid grid-cols-4 max-lg:grid-cols-2 max-lg:mt-10 lg:mt-[40px]'>
+                    <div className='grid grid-cols-4 max-lg:grid-cols-2 max-lg:mt-10 lg:mt-[40px] gap-[25px]'>
                         {womenproducts.data.filter(item => item.ct === "Ring").slice(0, 4).map((item) => (
-                            <div key={item.id} className="p-4 duration-300">
+                            <div key={item.id} className=" duration-300">
                                 <div
                                     className="h-full duration-300"
                                 >
@@ -348,14 +353,14 @@ const HomePage = () => {
                                             {/* Name and Price */}
                                             <div className="flex-wrap justify-end mt-2 relative">
                                                 <div className="flex justify-between">
-                                                    <h2 className="text-xs line-clamp-1 w-[70%] text-wrap">
+                                                    <h2 className="text-sm line-clamp-1 w-[70%] text-wrap">
                                                         {item.name}
                                                     </h2>
-                                                    <h2 className="text-xs text-nowrap font-semibold max-md:font-bold">{item.price} $</h2>
+                                                    <h2 className="text-sm text-nowrap font-semibold max-md:font-bold">{item.price} $</h2>
                                                 </div>
 
                                                 {/* Add to Cart */}
-                                                <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300">
+                                                <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
                                                     Add to Cart
                                                 </button>
                                             </div>
@@ -373,14 +378,14 @@ const HomePage = () => {
 
                     {/* title */}
                     <div>
-                        <h1 className='text-4xl underline font-semibold text-center max-md:text-[30px] underline-offset-[5px] duration-300'>
+                        <h1 className='titlestyle underline text-center underline-offset-[5px] duration-300'>
                             Regal Radiance Most Loved Jewellery
                         </h1>
                     </div>
 
-                    <div className="grid grid-cols-4 max-lg:grid-cols-2 max-lg:mt-10 lg:mt-[40px]">
+                    <div className="grid grid-cols-4 max-lg:grid-cols-2 max-lg:mt-10 lg:mt-[40px] gap-[25px]">
                         {sortedProducts.slice(0, 4).map((item) => (
-                            <div key={item.id} className="p-4 duration-300">
+                            <div key={item.id} className=" duration-300">
                                 <div className="h-full duration-300">
                                     {/* Card Div */}
                                     <div className="h-full duration-300">
@@ -423,16 +428,16 @@ const HomePage = () => {
                                             {/* Name and Price */}
                                             <div className="flex-wrap justify-end mt-2 relative">
                                                 <div className="flex justify-between">
-                                                    <h2 className="text-xs line-clamp-1 w-[70%] text-wrap">
+                                                    <h2 className="text-sm line-clamp-1 w-[70%] text-wrap">
                                                         {item.name}
                                                     </h2>
-                                                    <h2 className="text-xs text-nowrap font-semibold max-md:font-bold">
+                                                    <h2 className="text-sm text-nowrap font-semibold flex items-center max-md:font-bold">
                                                         {item.price} $
                                                     </h2>
                                                 </div>
 
                                                 {/* Add to Cart */}
-                                                <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300">
+                                                <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
                                                     Add to Cart
                                                 </button>
                                             </div>
@@ -447,7 +452,7 @@ const HomePage = () => {
             </div>
 
             {/* Wedding Season section */}
-            <div className='weddingdiv space-y-11 mt-[50px] items-center flex justify-center pl-[130px]'>
+            <div className='weddingdiv space-y-11 mt-[50px] items-center flex justify-center md:pl-[130px]'>
 
                 <div className='flex justify-center space-x-4'>
                     {/* day */}
@@ -497,13 +502,13 @@ const HomePage = () => {
             <div className='container mt-[50px]'>
 
                 {/* title */}
-                <div className='text-4xl underline text-center max-md:text-[30px] font-semibold underline-offset-[5px] duration-300'>
+                <div className='titlestyle underline text-center underline-offset-[5px] duration-300'>
                     Top Collection Of Regal Rediance
                 </div>
 
-                <div className='grid grid-cols-3 max-lg:grid-cols-2 mt-[50px]'>
+                <div className='grid grid-cols-3 max-lg:grid-cols-2 mt-[50px] gap-[25px]'>
                     {topsortedProducts.slice(0, 3).map((item) => (
-                        <div key={item.id} className="p-4 duration-300">
+                        <div key={item.id} className=" duration-300">
                             <div className="h-full duration-300">
                                 {/* Card Div */}
                                 <div className="h-full duration-300">
@@ -546,16 +551,16 @@ const HomePage = () => {
                                         {/* Name and Price */}
                                         <div className="flex-wrap justify-end mt-2 relative">
                                             <div className="flex justify-between">
-                                                <h2 className="text-xs line-clamp-1 w-[70%] text-wrap">
+                                                <h2 className="text-sm line-clamp-1 w-[70%] text-wrap">
                                                     {item.name}
                                                 </h2>
-                                                <h2 className="text-xs text-nowrap font-semibold max-md:font-bold">
+                                                <h2 className="text-sm text-nowrap font-semibold max-md:font-bold">
                                                     {item.price} $
                                                 </h2>
                                             </div>
 
                                             {/* Add to Cart */}
-                                            <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300">
+                                            <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
                                                 Add to Cart
                                             </button>
                                         </div>
@@ -576,19 +581,19 @@ const HomePage = () => {
                     <div className='lg:w-1/2 max-lg:w-full space-y-5'>
 
                         {/* upper image */}
-                        <div className='w-fit overflow-hidden Fashion duration-500'>
-                            <img src="fashion1.svg" alt="" className='duration-500' />
+                        <div className='w-fit overflow-hidden Fashion max-lg:w-full duration-500'>
+                            <img src="fashion1.svg" alt="" className='duration-500 max-lg:w-full' />
                         </div>
 
                         {/* lower image */}
-                        <div className='w-fit overflow-hidden Fashion duration-500'>
-                            <img src="fashion2.svg" alt="" className='duration-500' />
+                        <div className='w-fit overflow-hidden Fashion duration-500 max-lg:w-full'>
+                            <img src="fashion2.svg" alt="" className='duration-500 max-lg:w-full' />
                         </div>
                     </div>
 
                     {/* right side image */}
                     <div className='lg:w-1/2  max-lg:w-full fesonimghor overflow-hidden duration-500'>
-                        <div className='h-[530px] max-xl:h-[500px] max-lg:h-[380px] max-md:w-full flex  text-center fesonimg justify-center  items-center overflow-hidden Fashion duration-500 '>
+                        <div className='h-[530px] homeFashionhight max-lg:h-[380px] max-md:w-full flex  text-center fesonimg justify-center  items-center overflow-hidden Fashion duration-500 '>
                             <div className=''>
                                 <p className='text-6xl text-center text-white duration-500'>
                                     40% Off
@@ -614,8 +619,8 @@ const HomePage = () => {
                 <div className='nightfallbg w-full flex max-md:justify-center max-md:text-center items-center'>
 
                     {/* contain div */}
-                    <div className='container md:ml-[100px]'>
-                        <p className='text-3xl font-semibold underline underline-offset-[5px] duration-500'>
+                    <div className='container'>
+                        <p className='text-[48px] text-secondary font-semibold underline underline-offset-[5px] max-md:text-[30px] duration-500'>
                             The Nightfall Collection
                         </p>
 
@@ -638,6 +643,9 @@ const HomePage = () => {
 
                 <Swiper
                     slidesPerView={1}
+                    spaceBetween={25}
+                    infinity ={true}
+                    loop={true}
                     breakpoints={{
                         640: {
                             slidesPerView: 2,
@@ -656,14 +664,14 @@ const HomePage = () => {
                     className="mySwiper"
                 >
                     {trendingJewelryGifts.map((item) => (
-                        <SwiperSlide key={item.id} className="p-4 duration-300">
+                        <SwiperSlide key={item.id} className="duration-300">
                             <div
                                 className="h-full duration-300"
                                 onMouseEnter={() => setHoveredItem(item.id)}
                                 onMouseLeave={() => setHoveredItem(null)}
                             >
                                 {/* Card Div */}
-                                <div className="h-full duration-300">
+                                <div className="h-full duration-300 max-md:w-[300px] max-md:mx-auto">
                                     {/* Image Div */}
                                     <div className="hovercarddiv flex-wrap h-full duration-300">
                                         <div className="p-2 border relative duration-300">
@@ -688,11 +696,11 @@ const HomePage = () => {
                                             {/* Like Button */}
                                             <button
                                                 className="absolute top-6 max-lg:top-7 max-lg:right-[25px] right-[12px]"
-                                                onClick={handleLike}
+                                                onClick={() => handleLike(item.id)}
                                                 aria-label="Like Button"
                                             >
                                                 <img
-                                                    src={liked ? "fill-like.svg" : "like.svg"}
+                                                    src={liked[item.id] ? "/fill-like.svg" : "/like.svg"}
                                                     className="max-lg:w-full lg:w-[83%] duration-300"
                                                 />
                                             </button>
@@ -701,14 +709,14 @@ const HomePage = () => {
                                         {/* Name and Price */}
                                         <div className="flex-wrap justify-end mt-2 relative">
                                             <div className="flex justify-between">
-                                                <h2 className="text-xs line-clamp-2 w-[70%] max-lg:line-clamp-1 text-wrap">
+                                                <h2 className="text-sm line-clamp-1 w-[70%] max-lg:line-clamp-1 text-wrap">
                                                     {item.dec}
                                                 </h2>
-                                                <h2 className="text-xs text-nowrap font-semibold max-md:font-bold">{item.price}</h2>
+                                                <h2 className="text-sm text-nowrap font-semibold max-md:font-bold">{item.price}</h2>
                                             </div>
 
                                             {/* Add to Cart */}
-                                            <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300">
+                                            <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
                                                 Add to Cart
                                             </button>
                                         </div>
@@ -720,21 +728,25 @@ const HomePage = () => {
                 </Swiper>
             </div>
 
-            {/* customer reviews */}
+            {/* Testimonial */}
             <div className='container mt-[50px]'>
 
                 {/* title */}
                 <div>
-                    <h2 className='text-[24px] text-center font-bold'>Customer Reviews</h2>
+                    <h2 className='titlestyle text-center'>Testimonial</h2>
                 </div>
-                <div c>
+                <div className='gap-[25px]'>
                     <Swiper
                         slidesPerView={1}
+                        spaceBetween={25}
+                        loop={true}
+                        infinity={true}
                         pagination={{
                             clickable: true,
                             dynamicBullets: true,
                             dynamicThreshold: 1.0,
-                            // give navigation color black
+                            // gap
+
                         }}
                         breakpoints={{
                             640: {
@@ -753,9 +765,9 @@ const HomePage = () => {
                         className="mySwiper"
                     >
                         {reviews.map((item) => (
-                            <SwiperSlide key={item.id} className="p-4 duration-300 pb-10">
+                            <SwiperSlide key={item.id} className="duration-300 pb-10">
                                 {/* customer reviews */}
-                                <div className='mt-[50px]'>
+                                <div className='mt-[50px] max-md:w-[320px] max-md:mx-auto'>
 
                                     {/* main div */}
                                     <div className='border relative border-black px-4 py-5 mt-[30px]'>
@@ -783,7 +795,7 @@ const HomePage = () => {
                                             </div>
 
                                             {/* dec */}
-                                            <div className='text-[13px] text-center'>
+                                            <div className='text-[13px] text-center line-clamp-[9]'>
                                                 {
                                                     item.dec
                                                 }

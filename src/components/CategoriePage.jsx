@@ -4,6 +4,7 @@ import menproducts from "./menproducts.json";
 import womenproducts from "./womenproducts.json";
 import { Link } from "react-router-dom";
 import FooterPage from "./FooterPage";
+import PaginationPage from "./PaginationPage";
 
 
 const CategoriePage = () => {
@@ -71,12 +72,15 @@ const CategoriePage = () => {
     <div>
 
       {/* navbar */}
-      <div className="container shadow-md">
-        <NavPage />
+      <div className="shadow-md bg-white w-full fixed top-0 z-50">
+        <div className='container'>
+          <NavPage />
+        </div>
       </div>
 
+
       {/* Main container */}
-      <div className="categorie-main-container">
+      <div className="categorie-main-container mt-[80px]">
         <div className="container h-full flex justify-center items-center">
           {/* Title */}
           <div className="flex justify-center items-center h-full w-full xl:pl-[700px] lg:pl-[530px] md:pl-[300px]">
@@ -110,7 +114,7 @@ const CategoriePage = () => {
         {/* main screen */}
         <div className="main-screeen max-lg:hidden">
           <div className="flex xl:gap-[80px] gap-[45px]">
-            
+
             {/* Filter div */}
             <div className="w-[20%] ">
               {/* Active Gender Label */}
@@ -217,6 +221,14 @@ const CategoriePage = () => {
                   </div>
                 ))}
               </div>
+
+              {/* PaginationPage */}
+              <div className=" mt-5">
+                <div className="mx-auto">
+                  <PaginationPage totalPages={3} />
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -319,13 +331,20 @@ const CategoriePage = () => {
                           <h2 className="text-sm text-nowrap font-semibold max-md:font-bold">{product.price} $</h2>
                         </div>
 
-                        <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300">
+                        <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 text-[14px]">
                           Add to Cart
                         </button>
                       </div>
                     </div>
                   </div>
                 ))}
+              </div>
+
+              {/* PaginationPage */}
+              <div className=" mt-5">
+                <div className="mx-auto">
+                  <PaginationPage totalPages={3} />
+                </div>
               </div>
             </div>
           </div>

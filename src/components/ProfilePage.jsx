@@ -7,12 +7,14 @@ const ProfilePage = () => {
         <div>
 
             {/* navbar */}
-            <div className='container shadow-md'>
-                <Navbar />
+            <div className="shadow-md bg-white w-full fixed top-0 z-50">
+                <div className='container'>
+                    <Navbar />
+                </div>
             </div>
 
             {/* main container */}
-            <div className='profile-main-container'>
+            <div className='profile-main-container mt-[80px]'>
                 <div className='container md:flex justify-between max-md:flex-wrap max-md:text-center max-md:my-auto items-center h-full'>
 
                     {/* left side */}

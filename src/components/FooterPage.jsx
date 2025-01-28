@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const FooterPage = () => {
   return (
-    <div className='bg-[#D5DDDD] text-secondary pt-12 pb-5'>
-      <div className='grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 justify-between container'>
+    <div className='bg-[#D5DDDD] text-secondary pt-12 pb-3'>
+      <div className='grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 justify-between  xl:px-10 lg:mx-[62px] md:px-8 px-4 2xl:container 2xl:mx-auto'>
 
         {/* first section */}
         <div>
@@ -104,6 +104,16 @@ const FooterPage = () => {
               <img src="linkedin.svg" alt="" />
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* copy right section */}
+      <div className='mt-[30px]'>
+
+        <hr className='border-[1px] border-secondary' />
+
+        <div className=' text-center text-secondary mt-5'>
+          Copyright Notice © 2024 Regal Rediance. All Rights Reserved.
         </div>
       </div>
     </div>

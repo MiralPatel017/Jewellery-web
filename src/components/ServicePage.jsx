@@ -8,12 +8,14 @@ const ServicePage = () => {
   return (
     <div>
       {/* Navbar */}
-      <div className='container shadow-md'>
-        <NavPage />
-      </div>
+      <div className="shadow-md bg-white w-full fixed top-0 z-50">
+                <div className='container'>
+                    <NavPage />
+                </div>
+            </div>
 
       {/* main container */}
-      <div className='service-main-container'>
+      <div className='service-main-container mt-[80px]'>
         <div className='container flex max-lg:justify-center  xl:pl-[800px] lg:pl-[500px] h-full my-auto'>
           <div className='flex-wrap my-auto space-y-3 max-lg:text-center'>
             {/* title */}
@@ -21,11 +23,11 @@ const ServicePage = () => {
               service
             </div>
 
-            <div className='text-white text-2xl font-semibold'>
+            <div className='text-white md:text-2xl text-lg font-semibold'>
               Get Repair Service Free on
             </div>
 
-            <div className='text-primary text-6xl max-lg:text-5xl'>
+            <div className='text-primary text-6xl max-lg:text-5xl max-md:text-4xl'>
               Wedding Season
             </div>
           </div>
@@ -46,7 +48,7 @@ const ServicePage = () => {
 
           {/* image */}
           <div className='lg:w-30%  max-xl:flex xl:items-center'>
-            <img src="We-Make-Our-Jewellery-img.svg" alt="" className='lg:w-[80%] mx-auto' />
+            <img src="We-Make-Our-Jewellery-img.svg" alt="" className='md:w-[80%] mx-auto' />
           </div>
 
           {/* text/contain */}
@@ -61,23 +63,35 @@ const ServicePage = () => {
       {/* Our Services Section */}
       <div className='py-[50px] ourservices mt-[50px]'>
         <div className='container'>
-          <div className='text-center text-3xl font-semibold'>
+          <div className='text-center titlestyle text-secondary'>
             Our Services
           </div>
 
           <div className='grid grid-cols-5 mt-5 max-lg:grid-cols-2 gap-5 '>
             {OurService.map((service) => (
-              <div key={service.id} className='w-fit servicehover duration-300 max-md:mx-auto'>
+              <div key={service.id} className='w-fit servicehover duration-300 max-lg:mx-auto'>
                 <Link to={`/ServiceDetailsPage/${service.id}`}>
                   <div>
                     <img src={service.img} alt={service.name} className='w-[100%] duration-300' />
                   </div>
                   <div className='text-center mt-3 max-md:text-base font-semibold text-lg'>
-                    <p className='duration-300'>{service.name}</p>
+                    <p className='duration-300 max-md:text-[13.5px]'>{service.name}</p>
                   </div>
                 </Link>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/*  */}
+      <div className='mt-[50px]'>
+        <div className='container grid grid-cols-2 max-lg:grid-cols-1'>
+          <div className='p-10 bg-[#BE9A8080] flex justify-center py-20 mx-auto '>
+            <img src="making-customized.png" alt="w-[95%]" />
+          </div>
+          <div>
+            <img src="customizedjewelleyimg.svg" alt="" className='mx-auto'/>
           </div>
         </div>
       </div>

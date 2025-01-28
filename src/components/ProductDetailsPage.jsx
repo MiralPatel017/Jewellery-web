@@ -69,11 +69,10 @@ const ProductDetailsPage = () => {
                             ★★★★☆ (4.6) 1.2k Reviews
                         </div>
 
-                        <div className=' gap-2 flex items-end'>
-
-                            <div className='text-3xl max-md:text-[25px] font-semibold'> $ 548.3 </div>
-                            <div className='text-gray-500 line-through'> 988.04 $</div>
-                            <div>40% Off On Making Charges</div>
+                        <div className=' gap-2 flex items-end align-bottom'>
+                            <div className='text-3xl max-md:text-xl font-semibold text-nowrap'> $ 548.3 </div>
+                            <div className='text-gray-500 max-sm:text-sm line-through text-nowrap'> 988.04 $</div>
+                            <div className='max-sm:text-sm line-clamp-1'>40% Off On Making Charges</div>
                         </div>
 
                         <div className=''>

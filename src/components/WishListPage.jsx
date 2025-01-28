@@ -7,8 +7,10 @@ const WishListPage = () => {
         <div>
 
             {/* navbar */}
-            <div className='container shadow-md'>
-                <Navbar />
+            <div className="shadow-md">
+                <div className="container">
+                    <Navbar />
+                </div>
             </div>
 
             <div className='container mt-[80px]'>
@@ -21,11 +23,11 @@ const WishListPage = () => {
                             Product
                         </div>
 
-                        <div className='xl:pr-[250px] lg:pr-[150px]'>
+                        <div className='xl:pr-[270px] lg:pr-[170px] md:pr-[70px]'>
                             Product Details
                         </div>
 
-                        <div className='xl:pr-[120px] lg:pr-[100px]'>
+                        <div className='xl:pr-[130px] lg:pr-[90px] md:pr-[50px]'>
                             action
                         </div>
                     </div>
@@ -34,17 +36,17 @@ const WishListPage = () => {
                     <div className='mt-8'>
                         <div className='flex md:gap-7 max-md:gap-5'>
                             {/* image */}
-                            <div className='w-[20%] flex items-center max-md:w-[25%]'>
+                            <div className='lg:w-[15%] md:w-[21%] flex items-center max-md:w-[25%]'>
                                 <div className='border p-1 border-black'>
                                     <img src="product-1.svg" alt="" className='border-1 border-black' />
                                 </div>
                             </div>
 
                             {/* product details */}
-                            <div className='md:w-[80%] max-md:w-[75%]'>
+                            <div className='lg:w-[85%] md:w-[80%] max-md:w-[75%] lg:space-y-4'>
 
                                 {/* product name */}
-                                <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg'>
+                                <div className='font-medium max-md:text-xs lg:text-[20px] text-secondary line-clamp-1 max-md:mb-4'>
                                     Annalise Layered Diamond Necklace
                                 </div>
 
@@ -52,10 +54,10 @@ const WishListPage = () => {
                                 <div className='flex'>
 
                                     {/* Purity, Qty and price */}
-                                    <div className='w-[80%] md:space-y-3 max-md:space-y-1 max-md:text-xs'>
-                                        <p className='gap-1 flex'>
+                                    <div className='w-[80%] md:space-y-2 max-md:space-y-1 max-md:text-xs'>
+                                        <p className='gap-1 line-clamp-1 flex text-nowrap'>
                                             Purity :
-                                            <p className='opacity-55'>
+                                            <p className='opacity-55 text-nowrap line-clamp-1'>
                                                 14K GOLD
                                             </p>
                                         </p>
@@ -97,17 +99,17 @@ const WishListPage = () => {
                     <div className='mt-8'>
                         <div className='flex md:gap-7 max-md:gap-5'>
                             {/* image */}
-                            <div className='w-[20%] flex items-center max-md:w-[25%]'>
+                            <div className='lg:w-[15%] md:w-[21%] flex items-center max-md:w-[25%]'>
                                 <div className='border p-1 border-black'>
                                     <img src="product-2.svg" alt="" className='border-1 border-black' />
                                 </div>
                             </div>
 
                             {/* product details */}
-                            <div className='md:w-[80%] max-md:w-[75%]'>
+                            <div className='lg:w-[85%] md:w-[80%] max-md:w-[75%] lg:space-y-4'>
 
                                 {/* product name */}
-                                <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg'>
+                                <div className='font-medium max-md:text-xs lg:text-[20px] text-secondary max-md:mb-4 line-clamp-1'>
                                     Beats Of Heart Diamond Band Ring
                                 </div>
 
@@ -115,10 +117,10 @@ const WishListPage = () => {
                                 <div className='flex'>
 
                                     {/* Purity, Qty and price */}
-                                    <div className='w-[80%] md:space-y-3 max-md:space-y-1 max-md:text-xs'>
-                                        <p className='flex gap-1'>
+                                    <div className='w-[80%] md:space-y-2 max-md:space-y-1 max-md:text-xs'>
+                                        <p className='flex gap-1 line-clamp-1 text-nowrap max-md:w-[90%]'>
                                             Purity :
-                                            <span className=' opacity-55'>
+                                            <span className=' opacity-55 line-clamp-1'>
                                                 14K Gold and Diamod
                                             </span>
                                         </p>
