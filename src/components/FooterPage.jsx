@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const FooterPage = () => {
   return (
-    <div className='bg-[#D5DDDD] text-secondary pt-12 pb-3'>
+    <div className='bg-[#D5DDDD] text-secondary pt-12 pb-3 text-secondary'>
       <div className='grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 justify-between  xl:px-10 lg:mx-[62px] md:px-8 px-4 2xl:container 2xl:mx-auto'>
 
         {/* first section */}
@@ -12,9 +12,9 @@ const FooterPage = () => {
           </div>
 
           {/* Location */}
-          <div className='mt-7'>
+          <div className='mt-7 Montserrat'>
             <div>
-              <h1 className='text-3xl font-semibold'>
+              <h1 className='text-3xl font-[600] text-secondary Montserrat'>
                 Location
               </h1>
             </div>
@@ -34,9 +34,9 @@ const FooterPage = () => {
         </div>
 
         {/* second section */}
-        <div className='md:mt-10 md:pl-[50px] max-md:mt-5'>
+        <div className='md:mt-10 md:pl-[50px] max-md:mt-5 Montserrat '>
           <div>
-            <h1 className='text-3xl font-semibold'>
+            <h1 className='text-3xl font-[600] text-secondary Montserrat'>
               Link
             </h1>
           </div>
@@ -60,9 +60,9 @@ const FooterPage = () => {
         </div>
 
         {/* third section */}
-        <div className='md:mt-10 max-md:mt-5'>
+        <div className='md:mt-10 max-md:mt-5 Montserrat'>
           <div>
-            <h1 className='text-3xl font-semibold'>
+            <h1 className='text-3xl font-[600] text-secondary Montserrat'>
               Information
             </h1>
           </div>
@@ -83,9 +83,9 @@ const FooterPage = () => {
         </div>
 
         {/* forth section */}
-        <div className='md:mt-10 max-md:mt-5'>
+        <div className='md:mt-10 max-md:mt-5 Montserrat'>
           <div>
-            <h1 className='text-3xl font-semibold'>
+            <h1 className='text-3xl font-[600] Montserrat text-secondary'>
               Newsletter
             </h1>
           </div>
@@ -108,7 +108,7 @@ const FooterPage = () => {
       </div>
 
       {/* copy right section */}
-      <div className='mt-[30px]'>
+      <div className='mt-[30px] Montserrat'>
 
         <hr className='border-[1px] border-secondary' />
 

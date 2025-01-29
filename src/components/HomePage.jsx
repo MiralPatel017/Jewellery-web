@@ -246,7 +246,7 @@ const HomePage = () => {
     }, [womenproducts]);
 
     return (
-        <div>
+        <div className='text-secondary'>
             {/* navbar */}
             <div className="shadow-md bg-white w-full fixed top-0 z-50">
                 <div className='container'>
@@ -258,14 +258,14 @@ const HomePage = () => {
             <div className='maincontainer mt-[80px] flex max-lg:w-full max-xl:justify-center items-center xl:pl-[150px] max-lg:px-5' >
                 <div>
                     <div>
-                        <h1 className=' lg:text-[85px] xl:text-center max-lg:text-[40px] max-md:text-[30px] max-lg:text-center max-md:w-full font-bold maintext text-primary'>Bridal Jewellery</h1>
+                        <h1 className=' lg:text-[85px] xl:text-center max-lg:text-[40px] max-md:text-[30px] max-lg:text-center max-md:w-full font-bold text-primary font-Marcellus'>Bridal Jewellery</h1>
                         <hr className='border border-white w-[78%] lg:-mt-2 justify-center mx-auto' />
-                        <h3 className='lg:text-[25px] mt-3 text-white text-center'>Elegance begins with the perfect jewel.</h3>
+                        <h3 className='lg:text-[25px] mt-3 text-white text-center Marcellus'>Elegance begins with the perfect jewel.</h3>
                         <div className='flex justify-center mt-5'>
-                            <p className='border border-primary h-fit w-fit p-1'>
-                                <button className='border bg-primary font-bold text-secondary px-[25px] py-[1px] hover:bg-secondary hover:border border-primary hover:text-primary  duration-300' >
+                            <p className='Karla border border-primary h-fit w-fit p-1'>
+                                <div className='Karla  border bg-primary font-bold text-secondary px-[25px] py-[1px] hover:bg-secondary hover:border border-primary hover:text-primary  duration-300 Karla' >
                                     Collection
-                                </button>
+                                </div>
                             </p>
                         </div>
                     </div>
@@ -287,7 +287,7 @@ const HomePage = () => {
                                             <div className='overflow-hidden rounded-full duration-300'>
                                                 <img src={category.img} className='duration-300' />
                                             </div>
-                                            <p className='text-center duration-300'>
+                                            <p className='Karla text-center duration-300 Karla'>
                                                 {category.name}
                                             </p>
                                         </div>
@@ -305,7 +305,7 @@ const HomePage = () => {
 
                     {/* title */}
                     <div>
-                        <h1 className='titlestyle underline text-center underline-offset-[5px] duration-300'>Engagement  Rings</h1>
+                        <h1 className='titlestyle underline text-center underline-offset-[5px] Montserrat duration-300'>Engagement  Rings</h1>
                     </div>
 
                     <div className='grid grid-cols-4 max-lg:grid-cols-2 max-lg:mt-10 lg:mt-[40px] gap-[25px]'>
@@ -356,11 +356,11 @@ const HomePage = () => {
                                                     <h2 className="text-sm line-clamp-1 w-[70%] text-wrap">
                                                         {item.name}
                                                     </h2>
-                                                    <h2 className="text-sm text-nowrap font-semibold max-md:font-bold">{item.price} $</h2>
+                                                    <h2 className="text-sm text-nowrap font-semibold max-md:font-bold Karla">{item.price} $</h2>
                                                 </div>
 
                                                 {/* Add to Cart */}
-                                                <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
+                                                <button className="Karla mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
                                                     Add to Cart
                                                 </button>
                                             </div>
@@ -378,7 +378,7 @@ const HomePage = () => {
 
                     {/* title */}
                     <div>
-                        <h1 className='titlestyle underline text-center underline-offset-[5px] duration-300'>
+                        <h1 className='titlestyle underline text-center Montserrat underline-offset-[5px] duration-300'>
                             Regal Radiance Most Loved Jewellery
                         </h1>
                     </div>
@@ -428,16 +428,16 @@ const HomePage = () => {
                                             {/* Name and Price */}
                                             <div className="flex-wrap justify-end mt-2 relative">
                                                 <div className="flex justify-between">
-                                                    <h2 className="text-sm line-clamp-1 w-[70%] text-wrap">
+                                                    <h2 className="text-sm line-clamp-1 w-[70%] text-wrap Karla">
                                                         {item.name}
                                                     </h2>
-                                                    <h2 className="text-sm text-nowrap font-semibold flex items-center max-md:font-bold">
+                                                    <h2 className="text-sm text-nowrap font-semibold flex items-center max-md:font-bold Karla">
                                                         {item.price} $
                                                     </h2>
                                                 </div>
 
                                                 {/* Add to Cart */}
-                                                <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
+                                                <button className=" Karla mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold Karla border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
                                                     Add to Cart
                                                 </button>
                                             </div>
@@ -502,7 +502,7 @@ const HomePage = () => {
             <div className='container mt-[50px]'>
 
                 {/* title */}
-                <div className='titlestyle underline text-center underline-offset-[5px] duration-300'>
+                <div className='titlestyle underline text-center Montserrat underline-offset-[5px] duration-300'>
                     Top Collection Of Regal Rediance
                 </div>
 
@@ -554,13 +554,13 @@ const HomePage = () => {
                                                 <h2 className="text-sm line-clamp-1 w-[70%] text-wrap">
                                                     {item.name}
                                                 </h2>
-                                                <h2 className="text-sm text-nowrap font-semibold max-md:font-bold">
+                                                <h2 className="text-sm text-nowrap font-semibold max-md:font-bold Karla">
                                                     {item.price} $
                                                 </h2>
                                             </div>
 
                                             {/* Add to Cart */}
-                                            <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
+                                            <button className="Karla mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
                                                 Add to Cart
                                             </button>
                                         </div>
@@ -595,16 +595,16 @@ const HomePage = () => {
                     <div className='lg:w-1/2  max-lg:w-full fesonimghor overflow-hidden duration-500'>
                         <div className='h-[530px] homeFashionhight max-lg:h-[380px] max-md:w-full flex  text-center fesonimg justify-center  items-center overflow-hidden Fashion duration-500 '>
                             <div className=''>
-                                <p className='text-6xl text-center text-white duration-500'>
+                                <p className='Karla Karla text-6xl text-center text-white duration-500'>
                                     40% Off
                                 </p>
-                                <p className='text-4xl text-center text-white duration-500 mt-3'>
+                                <p className='Karla Karla text-4xl text-center text-white duration-500 mt-3'>
                                     Fashion Jewellery
                                 </p>
-                                <p className='border border-primary mx-auto h-fit w-fit p-1 mt-3'>
-                                    <button className='border bg-primary font-bold text-secondary px-[25px] py-[1.5px] hover:bg-secondary hover:border border-primary hover:text-primary  duration-[400ms]' >
+                                <p className='Karla Karla border border-primary mx-auto h-fit w-fit p-1 mt-3'>
+                                    <div className='Karla  border bg-primary font-bold text-secondary px-[25px] py-[1.5px] hover:bg-secondary hover:border border-primary hover:text-primary  duration-[400ms]' >
                                         Shop Now
-                                    </button>
+                                    </div>
                                 </p>
                             </div>
                         </div>
@@ -620,18 +620,18 @@ const HomePage = () => {
 
                     {/* contain div */}
                     <div className='container'>
-                        <p className='text-[48px] text-secondary font-semibold underline underline-offset-[5px] max-md:text-[30px] duration-500'>
+                        <p className='Karla Karla text-[48px] text-secondary font-semibold underline underline-offset-[5px] max-md:text-[30px] duration-500 Mirza'>
                             The Nightfall Collection
                         </p>
 
-                        <p className='text-[19px] text-wrap mt-3 duration-500'>
+                        <p className='Karla Karla text-[19px] text-wrap mt-3 duration-500 Karla'>
                             Clear Topaz & Pearl Open Ring In Rose <br /> Gold Plated Silver
                         </p>
 
-                        <p className='border border-secondary h-fit w-fit p-1 mt-3 max-md:mx-auto'>
-                            <button className='border bg-primary border-secondary font-bold text-secondary px-[25px] py-[1.5px] hover:bg-secondary hover:border hover:text-primary  duration-[400ms]' >
+                        <p className='Karla Karla border border-secondary h-fit w-fit p-1 mt-3 max-md:mx-auto Karla'>
+                            <div className='Karla  border bg-primary border-secondary Karla font-bold text-secondary px-[25px] py-[1.5px] hover:bg-secondary hover:border hover:text-primary  duration-[400ms]' >
                                 Shop Now
-                            </button>
+                            </div>
                         </p>
                     </div>
                 </div>
@@ -639,7 +639,7 @@ const HomePage = () => {
 
             {/* Trending Jewelry Gifts section */}
             <div className="mt-[50px]">
-                <h2 className="text-center text-3xl font-semibold mb-8 underline underline-offset-4">Trending Jewelry Gifts</h2>
+                <h2 className="text-center text-3xl text-secondary font-semibold mb-8 underline underline-offset-4 font-Mirza">Trending Jewelry Gifts</h2>
 
                 <Swiper
                     slidesPerView={1}
@@ -709,14 +709,14 @@ const HomePage = () => {
                                         {/* Name and Price */}
                                         <div className="flex-wrap justify-end mt-2 relative">
                                             <div className="flex justify-between">
-                                                <h2 className="text-sm line-clamp-1 w-[70%] max-lg:line-clamp-1 text-wrap">
+                                                <h2 className="text-sm line-clamp-1 w-[70%] max-lg:line-clamp-1 text-wrap Karla">
                                                     {item.dec}
                                                 </h2>
-                                                <h2 className="text-sm text-nowrap font-semibold max-md:font-bold">{item.price}</h2>
+                                                <h2 className="text-sm text-nowrap Karla">{item.price}</h2>
                                             </div>
 
                                             {/* Add to Cart */}
-                                            <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
+                                            <button className="Karla mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 max-md:text-[12px]">
                                                 Add to Cart
                                             </button>
                                         </div>
@@ -733,7 +733,7 @@ const HomePage = () => {
 
                 {/* title */}
                 <div>
-                    <h2 className='titlestyle text-center'>Testimonial</h2>
+                    <h2 className='titlestyle Montserrat text-center text-secondary'>Testimonial</h2>
                 </div>
                 <div className='gap-[25px]'>
                     <Swiper
@@ -782,7 +782,7 @@ const HomePage = () => {
                                             {/* star */}
                                             <div className='flex justify-center items-end'>
                                                 {renderStars(item.rating)}
-                                                <p className='text-xs text-gray-600 font-semibold'>
+                                                <p className='Karla Karla text-xs text-gray-600 font-semibold'>
                                                     {"("}{item.rating}{")"}
                                                 </p>
                                             </div>
@@ -795,7 +795,7 @@ const HomePage = () => {
                                             </div>
 
                                             {/* dec */}
-                                            <div className='text-[13px] text-center line-clamp-[9]'>
+                                            <div className='Karla text-[13px]  text-center line-clamp-[9]'>
                                                 {
                                                     item.dec
                                                 }

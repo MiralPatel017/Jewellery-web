@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './NavPage'
+import NavPage from './NavPage'
 import FooterPage from './FooterPage'
 
 const MyOrderPage = () => {
@@ -13,15 +13,17 @@ const MyOrderPage = () => {
     return (
         <div>
             {/* navbar */}
-            <div className='container shadow-md'>
-                <Navbar />
+            <div className="shadow-md bg-white w-full fixed top-0 z-50">
+                <div className='container'>
+                    <NavPage />
+                </div>
             </div>
 
             {/* main container */}
-            <div className='container mt-[80px]'>
+            <div className='container mt-[160px]'>
 
                 {/* title */}
-                <div className='titlestyle text-secondary max-md:text-3xl max-md:text-center'>
+                <div className='titlestyle text-secondary Montserrat max-md:text-3xl max-md:text-center'>
                     My Order
                 </div>
 
@@ -31,21 +33,21 @@ const MyOrderPage = () => {
 
                         {/* Shipping button */}
                         <button
-                            className={`border w-[200px] max-sm:text-xs py-1 ${activeSection === 'onShipping' ? 'bg-secondary text-white' : ' border-secondary'}`}
+                            className={`border w-[200px] max-sm:text-xs text-[14px] py-[8px] duration-300 Montserrat ${activeSection === 'onShipping' ? 'bg-secondary text-white' : ' border-secondary'}`}
                             onClick={() => handleButtonClick('onShipping')}>
                             On Shipping
                         </button>
 
                         {/* completed button */}
                         <button
-                            className={`border w-[200px] max-sm:text-xs py-1 ${activeSection === 'completed' ? 'bg-secondary text-white' : 'border-secondary'}`}
+                            className={`border w-[200px] max-sm:text-xs text-[14px] py-[8px] duration-300 Montserrat ${activeSection === 'completed' ? 'bg-secondary text-white' : 'border-secondary'}`}
                             onClick={() => handleButtonClick('completed')}>
                             Completed
                         </button>
 
                         {/* canceled button */}
                         <button
-                            className={`border max-sm:text-xs w-[200px] py-1 ${activeSection === 'canceled' ? 'bg-secondary text-white' : 'border-secondary'}`}
+                            className={`border max-sm:text-xs w-[200px] text-[14px] py-[8px] duration-300 Montserrat ${activeSection === 'canceled' ? 'bg-secondary text-white' : 'border-secondary'}`}
                             onClick={() => handleButtonClick('canceled')}>
                             Canceled
                         </button>
@@ -60,7 +62,7 @@ const MyOrderPage = () => {
                         <div className='mt-5 space-y-5'>
 
                             {/* first product */}
-                            <div className='flex md:gap-7 max-md:gap-5 w-full'>
+                            <div className='flex md:gap-7 Karla max-md:gap-5 w-full'>
                                 {/* image */}
                                 <div className='w-auto flex items-center max-md:w-[25%]'>
                                     <div className='border p-1 border-black'>
@@ -121,7 +123,7 @@ const MyOrderPage = () => {
                             </div>
 
                             {/* second product */}
-                            <div className='flex md:gap-7 max-md:gap-5 w-full'>
+                            <div className='flex md:gap-7 Karla max-md:gap-5 w-full'>
                                 {/* image */}
                                 <div className='w-auto flex items-center max-md:w-[25%]'>
                                     <div className='border p-1 border-black'>
@@ -184,7 +186,7 @@ const MyOrderPage = () => {
                         <div className='mt-5 space-y-5'>
 
                             {/* first product */}
-                            <div className='flex md:gap-7 max-md:gap-5 w-full'>
+                            <div className='flex md:gap-7 Karla max-md:gap-5 w-full'>
 
                                 {/* right image */}
                                 <div className='flex items-center'>
@@ -251,7 +253,7 @@ const MyOrderPage = () => {
                             </div>
 
                             {/* second product */}
-                            <div className='flex md:gap-7 max-md:gap-5 max-sm:gap-3 w-full'>
+                            <div className='flex md:gap-7 Karla max-md:gap-5 max-sm:gap-3 w-full'>
 
                                 {/* right image */}
                                 <div className='flex items-center'>
@@ -319,7 +321,7 @@ const MyOrderPage = () => {
                         <div className='mt-5 space-y-5'>
 
                             {/* first product */}
-                            <div className='flex md:gap-7 max-md:gap-5 w-full'>
+                            <div className='flex md:gap-7 Karla max-md:gap-5 w-full'>
 
                                 {/* right image */}
                                 <div className='flex-wrap justify-center my-auto w-fit space-y-2'>
@@ -389,7 +391,7 @@ const MyOrderPage = () => {
                             </div>
 
                             {/* second product */}
-                            <div className='flex md:gap-7 max-md:gap-5 w-full'>
+                            <div className='flex md:gap-7 Karla max-md:gap-5 w-full'>
 
                                 {/* right image */}
                                 <div className='flex-wrap items-center justify-center my-auto space-y-2'>

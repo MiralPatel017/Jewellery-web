@@ -14,22 +14,22 @@ const CartPage = () => {
             </div>
 
             {/* product details and order summary */}
-            <div className='container mt-[80px]'>
+            <div className='container mt-[160px]'>
                 <div className='flex max-lg:flex-wrap gap-10'>
                     {/* product details */}
                     <div className='lg:w-[70%] max-lg:w-full'>
 
                         {/* index */}
-                        <div className='bg-secondary py-5 px-5 text-primary flex max-md:text-sm justify-between text-lg font-semibold'>
-                            <div className='md:pl-5'>
+                        <div className='bg-secondary py-5 px-5 text-primary flex max-md:text-sm justify-between text-lg font-[600]'>
+                            <div className='md:pl-5 Montserrat'>
                                 Product
                             </div>
 
-                            <div>
+                            <div className='Montserrat'>
                                 Product Details
                             </div>
 
-                            <div className='md:pr-12'>
+                            <div className='md:pr-12 Montserrat'>
                                 action
                             </div>
                         </div>
@@ -48,7 +48,7 @@ const CartPage = () => {
                                 <div className='md:w-[80%] max-md:w-[75%]'>
 
                                     {/* product name */}
-                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg'>
+                                    <div className='font-[500] max-md:text-xs md:mb-5 max-md:mb-4 Karla text-lg'>
                                         Annalise Layered Diamond Necklace
                                     </div>
 
@@ -57,14 +57,14 @@ const CartPage = () => {
 
                                         {/* Purity, Qty and price */}
                                         <div className='w-[80%] md:space-y-3 max-md:space-y-1 max-md:text-xs'>
-                                            <p className='gap-1 flex'>
+                                            <p className='gap-1 flex Karla'>
                                                 Purity :
                                                 <p className='opacity-55'>
                                                     14K GOLD
                                                 </p>
                                             </p>
 
-                                            <p className='flex gap-1'>
+                                            <p className='flex gap-1 Karla'>
                                                 <span className='flex gap-2.5'>
                                                     <p>
                                                         QTY
@@ -78,7 +78,7 @@ const CartPage = () => {
                                                 </p>
                                             </p>
 
-                                            <p className='gap-1 flex'>
+                                            <p className='gap-1 flex Karla'>
                                                 Price :
                                                 <span className=' opacity-55'>
                                                     548.3 $
@@ -111,7 +111,7 @@ const CartPage = () => {
                                 <div className='md:w-[80%] max-md:w-[75%]'>
 
                                     {/* product name */}
-                                    <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg'>
+                                    <div className='font-[500] max-md:text-xs md:mb-5 max-md:mb-4 text-lg Karla'>
                                         Beats Of Heart Diamond Band Ring
                                     </div>
 
@@ -119,7 +119,7 @@ const CartPage = () => {
                                     <div className='flex'>
 
                                         {/* Purity, Qty and price */}
-                                        <div className='w-[80%] md:space-y-3 max-md:space-y-1 max-md:text-xs'>
+                                        <div className='w-[80%] md:space-y-3 max-md:space-y-1 max-md:text-xs Karla'>
                                             <p className='flex gap-1'>
                                                 Purity :
                                                 <span className=' opacity-55'>
@@ -127,7 +127,7 @@ const CartPage = () => {
                                                 </span>
                                             </p>
 
-                                            <p className='flex gap-1'>
+                                            <p className='flex gap-1 Karla'>
                                                 <sppan className='flex gap-2.5'>
                                                     <p>
                                                         QTY
@@ -141,7 +141,7 @@ const CartPage = () => {
                                                 </p>
                                             </p>
 
-                                            <p className='flex gap-1'>
+                                            <p className='flex gap-1 Karla'>
                                                 Price :
                                                 <p className=' opacity-55'>
                                                     468.8 $
@@ -164,14 +164,14 @@ const CartPage = () => {
                     <div className='lg:w-[30%] max-lg:w-full'>
 
                         {/* index */}
-                        <div className='bg-secondary py-5 text-center font-semibold text-primary'>
+                        <div className='bg-secondary py-5 text-center font-[600] Montserrat text-primary'>
                             Checkout Securely
                         </div>
 
-                        <div className='bg-[#D9D9D9] px-1 py-1'>
+                        <div className='bg-[#D9D9D9] px-1 py-[8px] '>
 
                             {/* title */}
-                            <div className='mb-1 text-center font-semibold'>
+                            <div className='mb-[8px] text-center font-[600] Montserrat'>
                                 Order Summery
                             </div>
 
@@ -181,38 +181,38 @@ const CartPage = () => {
                                 <div className="space-y-4">
                                     {/* Item Total */}
                                     <div className="flex justify-between text-[15px]  px-4">
-                                        <span className="font-medium">Item Total</span>
-                                        <span className="font-medium">1012.6 $</span>
+                                        <span className="font-[500] Montserrat">Item Total</span>
+                                        <span className="font-[500] Montserrat">1012.6 $</span>
                                     </div>
 
                                     {/* Season Discount */}
-                                    <div className="flex justify-between text-[15px]  px-4">
+                                    <div className="flex justify-between text-[15px] Montserrat px-4">
                                         <span>Season Discount</span>
                                         <span>30 $</span>
                                     </div>
 
                                     {/* Sub Total */}
-                                    <div className="flex justify-between text-[15px]  px-4">
-                                        <span className="font-medium">Sub Total</span>
-                                        <span className="font-medium">982.6 $</span>
+                                    <div className="flex justify-between text-[15px] Montserrat px-4">
+                                        <span className="font-[500]">Sub Total</span>
+                                        <span className="font-[500]">982.6 $</span>
                                     </div>
 
                                     {/* Insurance */}
-                                    <div className="flex justify-between text-[15px]  px-4">
+                                    <div className="flex justify-between text-[15px] Montserrat px-4">
                                         <span>Insurance (1% Of Sub Total)</span>
                                         <span>2 $</span>
                                     </div>
 
                                     {/* Order Total */}
 
-                                    <div className='flex justify-between text-lg text-secondary bg-[#a6b0b0] w-full font-semibold px-4'>
+                                    <div className='flex justify-between text-lg Montserrat text-secondary bg-[#a6b0b0] w-full font-[600] px-4'>
                                         <span>Order Total</span>
                                         <span>984.6 $</span>
                                     </div>
 
 
                                     {/* Total Savings */}
-                                    <div className="flex justify-between text-[15px] px-4">
+                                    <div className="flex justify-between Montserrat text-[15px] px-4">
                                         <span>Your Total Savings</span>
                                         <span>30 $</span>
                                     </div>
@@ -221,7 +221,7 @@ const CartPage = () => {
                             </div>
 
 
-                            <div className=' pt-1 text-[10px] text-center'>
+                            <div className=' pt-[16px] pb-[8px] text-[12px] text-center Montserrat'>
                                 Have Any Queries? contact us For Assistance <br />
                                 Call Us At +1(212) 555-984 or whatsapp Chat
                             </div>
@@ -230,7 +230,7 @@ const CartPage = () => {
 
                         {/* continue shping button */}
                         <Link to='/PaymentPage'>
-                            <button className='text-primary hover:text-secondary bg-secondary hover:bg-primary text-xl w-full py-3 mt-5 font-semibold duration-300'>
+                            <button className='text-primary hover:text-secondary Montserrat bg-secondary hover:bg-primary text-xl w-full py-3 mt-5 font-[600] duration-300'>
                                 Continue Shoping
                             </button>
                         </Link>

@@ -19,15 +19,15 @@ const ServicePage = () => {
         <div className='container flex max-lg:justify-center  xl:pl-[800px] lg:pl-[500px] h-full my-auto'>
           <div className='flex-wrap my-auto space-y-3 max-lg:text-center'>
             {/* title */}
-            <div className='bg-primary text-secondary text-3xl w-fit px-7 pb-1  max-lg:mx-auto '>
+            <div className='Montserrat bg-primary text-secondary text-[32px] w-fit px-[32px] py-[2px]  max-lg:mx-auto '>
               service
             </div>
 
-            <div className='text-white md:text-2xl text-lg font-semibold'>
+            <div className='text-white md:text-2xl text-[32px] font-semibold Marko '>
               Get Repair Service Free on
             </div>
 
-            <div className='text-primary text-6xl max-lg:text-5xl max-md:text-4xl'>
+            <div className='text-primary Marcellus text-[70px] max-lg:text-5xl max-md:text-4xl'>
               Wedding Season
             </div>
           </div>
@@ -39,7 +39,7 @@ const ServicePage = () => {
 
         {/* title */}
         <div>
-          <div className='text-center text-3xl'>
+          <div className='text-center text-[36px] font-[600] text-secondary Montserrat'>
             How We Make Our Jewellery
           </div>
         </div>
@@ -53,7 +53,7 @@ const ServicePage = () => {
 
           {/* text/contain */}
           <div className='lg:w-[70%]'>
-            <p className='lg:text-[12.5px] max-md:text-sm max-lg:text-justify xl:text-[14.5px]'>
+            <p className='lg:text-[12.5px] max-md:text-sm max-lg:text-justify xl:text-[14.5px] Karla'>
               At Regal Redince, jewelry making is an art form that blends tradition with innovation. Our process begins with a collaborative design phase, where we work closely with clients to bring their vision to life through detailed sketches and digital renderings. We then source the finest ethically-sourced gemstones and metals, ensuring quality and sustainability. Skilled artisans craft each piece with meticulous attention to detail, combining traditional techniques and modern technology. Each item undergoes rigorous quality control and finishing touches to ensure flawless craftsmanship. From concept to creation, we take pride in delivering jewelry that is as meaningful as it is beautiful, designed to last for generations. Every piece is a reflection of our commitment to excellence, passion for design, and dedication to customer satisfaction. We believe in creating jewelry that tells a unique story, making each piece a cherished treasure. At Regal Redince, we don't just create jewelry, we create legacies. Our pieces are made to stand the test of time, evoking emotions and memories for years to come. With every creation, we honor the artistry and tradition that has been passed down through generations.
             </p>
           </div>
@@ -63,7 +63,7 @@ const ServicePage = () => {
       {/* Our Services Section */}
       <div className='py-[50px] ourservices mt-[50px]'>
         <div className='container'>
-          <div className='text-center titlestyle text-secondary'>
+          <div className='text-center titlestyle text-secondary Montserrat'>
             Our Services
           </div>
 
@@ -75,7 +75,7 @@ const ServicePage = () => {
                     <img src={service.img} alt={service.name} className='w-[100%] duration-300' />
                   </div>
                   <div className='text-center mt-3 max-md:text-base font-semibold text-lg'>
-                    <p className='duration-300 max-md:text-[13.5px]'>{service.name}</p>
+                    <p className='duration-300 max-md:text-[13.5px] Montserrat font-[500] text-[18px]'>{service.name}</p>
                   </div>
                 </Link>
               </div>

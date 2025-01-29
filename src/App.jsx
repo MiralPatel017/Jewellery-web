@@ -14,6 +14,8 @@ import PaymentPage from "./components/PaymentPage";
 import ThankYouPage from "./components/ThankYouPage";
 import OrderTrackingPage from "./components/OrderTrackingPage";
 import MyOrderPage from "./components/MyOrderPage";
+import LoginPage from "./components/LoginPage";
+import UserDropdownPage from "./components/UserDropdownPage";
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
         <Route path="/ThankYouPage" element={<ThankYouPage />} />
         <Route path="/OrderTrackingPage" element={<OrderTrackingPage />} />
         <Route path="/MyOrderPage" element={<MyOrderPage />} />
+        <Route path="/LoginPage" element={<LoginPage />} />
+        <Route path="/UserDropdownPage" element={<UserDropdownPage />} />
       </Routes>
     </main>
   );

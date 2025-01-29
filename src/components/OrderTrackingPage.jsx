@@ -23,20 +23,20 @@ const OrderTrackingPage = () => {
             <div className=' container mt-[50px]'>
 
                 {/* title */}
-                <div className=" max-md:text-center max-lg:text-3xl lg:text-[40px] font-semibold">
+                <div className=" max-md:text-center max-lg:text-3xl lg:text-[40px] font-[600] Montserrat">
                     Order Tracking
                 </div>
 
                 {/* order steps */}
                 <div className="flex items-center w-full mt-5 px-5">
                     {/* First Step */}
-                    <div className="flex items-center w-1/3 z-10">
+                    <div className="flex items-center w-1/3">
                         <div className="h-6 w-6 bg-secondary rounded-full"></div>
                         <div className="h-1 bg-secondary w-full"></div>
                     </div>
 
                     {/* Second Step */}
-                    <div className="flex items-center  w-1/3 z-0">
+                    <div className="flex items-center  w-1/3 ">
                         <div className="h-7 w-7 bg-primary rounded-full border-2 border-primary flex justify-center items-center">
                             <div className="h-4 w-4 bg-secondary rounded-full">
                             </div>
@@ -55,7 +55,7 @@ const OrderTrackingPage = () => {
                 </div>
 
                 <div className='mt-5' >
-                    <div className='flex md:justify-between max-md:gap-[40px]'>
+                    <div className='flex md:justify-between max-md:gap-[40px] Montserrat'>
                         <div className='text-center max-md:text-sm max-md:pr-[0px]'>
                             Order <br />
                             Processed
@@ -87,7 +87,7 @@ const OrderTrackingPage = () => {
                             </div>
 
                             {/* product details */}
-                            <div className='md:w-[80%] max-md:w-[75%]'>
+                            <div className='md:w-[80%] max-md:w-[75%] Karla'>
 
                                 {/* product name */}
                                 <div className='font-medium max-md:text-xs md:mb-5 max-md:mb-4 text-lg'>

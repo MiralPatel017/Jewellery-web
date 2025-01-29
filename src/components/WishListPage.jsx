@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './NavPage'
+import NavPage from './NavPage'
 import FooterPage from './FooterPage'
 
 const WishListPage = () => {
@@ -7,28 +7,28 @@ const WishListPage = () => {
         <div>
 
             {/* navbar */}
-            <div className="shadow-md">
-                <div className="container">
-                    <Navbar />
+            <div className="shadow-md bg-white w-full fixed top-0 z-50">
+                <div className='container'>
+                    <NavPage />
                 </div>
             </div>
 
-            <div className='container mt-[80px]'>
+            <div className='container mt-[160px]'>
 
                 <div className=''>
 
                     {/* index */}
-                    <div className='bg-secondary py-5 px-5 text-primary flex max-md:text-sm justify-between text-lg font-semibold'>
-                        <div className='md:pl-5'>
+                    <div className='bg-secondary py-5 px-5 text-primary flex max-md:text-sm justify-between text-lg font-[500] Montserrat'>
+                        <div className='md:pl-5 Montserrat'>
                             Product
                         </div>
 
-                        <div className='xl:pr-[270px] lg:pr-[170px] md:pr-[70px]'>
+                        <div className='xl:pr-[270px] lg:pr-[170px] md:pr-[70px] Montserrat'>
                             Product Details
                         </div>
 
-                        <div className='xl:pr-[130px] lg:pr-[90px] md:pr-[50px]'>
-                            action
+                        <div className='xl:pr-[130px] lg:pr-[90px] md:pr-[50px] Montserrat'>
+                            Action
                         </div>
                     </div>
 
@@ -46,7 +46,7 @@ const WishListPage = () => {
                             <div className='lg:w-[85%] md:w-[80%] max-md:w-[75%] lg:space-y-4'>
 
                                 {/* product name */}
-                                <div className='font-medium max-md:text-xs lg:text-[20px] text-secondary line-clamp-1 max-md:mb-4'>
+                                <div className='font-medium max-md:text-xs lg:text-[20px] text-secondary line-clamp-1 max-md:mb-4 Karla'>
                                     Annalise Layered Diamond Necklace
                                 </div>
 
@@ -54,15 +54,15 @@ const WishListPage = () => {
                                 <div className='flex'>
 
                                     {/* Purity, Qty and price */}
-                                    <div className='w-[80%] md:space-y-2 max-md:space-y-1 max-md:text-xs'>
-                                        <p className='gap-1 line-clamp-1 flex text-nowrap'>
+                                    <div className='w-[80%] md:space-y-2 max-md:space-y-1 max-md:text-xs Karla'>
+                                        <p className='gap-1 line-clamp-1 flex text-nowrap Karla'>
                                             Purity :
-                                            <p className='opacity-55 text-nowrap line-clamp-1'>
+                                            <p className='opacity-55 text-nowrap line-clamp-1 Karla'>
                                                 14K GOLD
                                             </p>
                                         </p>
 
-                                        <p className='flex gap-1'>
+                                        <p className='flex gap-1 Karla'>
                                             <span className='flex gap-2.5'>
                                                 <p>
                                                     QTY
@@ -76,7 +76,7 @@ const WishListPage = () => {
                                             </p>
                                         </p>
 
-                                        <p className='gap-1 flex'>
+                                        <p className='gap-1 flex Karla'>
                                             Price :
                                             <span className=' opacity-55'>
                                                 548.3 $
@@ -86,7 +86,7 @@ const WishListPage = () => {
 
                                     {/* delete button */}
                                     <div className='w-[20%]'>
-                                        <img src="delete-btn.svg" alt="" className='md:w-[20px] max-md:w-[15px]' />
+                                        <img src="delete-btn.svg" alt="" className='md:w-[20px] max-md:w-[15px] Karla' />
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ const WishListPage = () => {
                             <div className='lg:w-[85%] md:w-[80%] max-md:w-[75%] lg:space-y-4'>
 
                                 {/* product name */}
-                                <div className='font-medium max-md:text-xs lg:text-[20px] text-secondary max-md:mb-4 line-clamp-1'>
+                                <div className='font-medium max-md:text-xs lg:text-[20px] text-secondary max-md:mb-4 line-clamp-1 Karla'>
                                     Beats Of Heart Diamond Band Ring
                                 </div>
 
@@ -118,14 +118,14 @@ const WishListPage = () => {
 
                                     {/* Purity, Qty and price */}
                                     <div className='w-[80%] md:space-y-2 max-md:space-y-1 max-md:text-xs'>
-                                        <p className='flex gap-1 line-clamp-1 text-nowrap max-md:w-[90%]'>
+                                        <p className='flex gap-1 line-clamp-1 text-nowrap max-md:w-[90%] Karla'>
                                             Purity :
                                             <span className=' opacity-55 line-clamp-1'>
                                                 14K Gold and Diamod
                                             </span>
                                         </p>
 
-                                        <p className='flex gap-1'>
+                                        <p className='flex gap-1 Karla'>
                                             <sppan className='flex gap-2.5'>
                                                 <p>
                                                     QTY
@@ -139,7 +139,7 @@ const WishListPage = () => {
                                             </p>
                                         </p>
 
-                                        <p className='flex gap-1'>
+                                        <p className='flex gap-1 Karla'>
                                             Price :
                                             <p className=' opacity-55'>
                                                 468.8 $

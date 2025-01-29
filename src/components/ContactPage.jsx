@@ -17,10 +17,10 @@ const ContactPage = () => {
       <div className='contact-main-container mt-[80px] flex justify-center max-md:text-center items-center'>
         {/* contain */}
         <div className='lg:pl-[500px]'>
-          <p className='text-3xl text-white max-md:text-2xl'>
+          <p className='text-[32px] text-white max-md:text-2xl Marko '>
             For Any Inquiries
           </p>
-          <p className='text-7xl text-primary max-md:text-[51px]'>
+          <p className='text-[70px] Marcellus text-primary max-md:text-[51px]'>
             Contact Us
           </p>
         </div>
@@ -30,14 +30,14 @@ const ContactPage = () => {
       <div className=' mt-[50px]'>
 
         {/* title */}
-        <div className='text-center titlestyle'>
+        <div className='text-center titlestyle Montserrat'>
           Contact us
         </div>
 
         <div className='container grid grid-cols-2 max-lg:grid-cols-1 mt-5 lg:space-x-10'>
           {/* form part  */}
           <div>
-            <div>
+            <div className='Montserrat'>
               Have questions or feedback? We're here to help. Send us a message, and we'll respond within 24 hours
             </div>
 
@@ -50,7 +50,7 @@ const ContactPage = () => {
                   <input
                     placeholder='Your Name*'
                     type="text"
-                    className="w-full p-2 border border-black focus:border-black focus:border focus:outline-none focus placeholder:text-secondary bg-[#BE9A8073]"
+                    className="w-full p-2 border Montserrat border-black focus:border-black focus:border focus:outline-none focus placeholder:text-secondary bg-[#BE9A8073]"
                     required
                   />
                 </div>
@@ -60,7 +60,7 @@ const ContactPage = () => {
                   <input
                     placeholder='Your Phone Number*'
                     type="number"
-                    className="w-full p-2 border border-black focus:border-black focus:border focus:outline-none focus placeholder:text-secondary bg-[#BE9A8073]"
+                    className="w-full p-2 Montserrat border border-black focus:border-black focus:border focus:outline-none focus placeholder:text-secondary bg-[#BE9A8073]"
                     required
                   />
                 </div>
@@ -70,7 +70,7 @@ const ContactPage = () => {
                   <input
                     placeholder='Your Email*'
                     type="email"
-                    className="w-full p-2 border border-black focus:border-black focus:border focus:outline-none placeholder:text-secondary bg-[#BE9A8073]"
+                    className="w-full p-2 Montserrat border border-black focus:border-black focus:border focus:outline-none placeholder:text-secondary bg-[#BE9A8073]"
                     required
                   />
                 </div>
@@ -80,7 +80,7 @@ const ContactPage = () => {
                   <input
                     placeholder='Your Subject*'
                     type="text"
-                    className="w-full p-2 border border-black focus:border-black focus:border focus:outline-none placeholder:text-secondary bg-[#BE9A8073]"
+                    className="w-full Montserrat p-2 border border-black focus:border-black focus:border focus:outline-none placeholder:text-secondary bg-[#BE9A8073]"
                     required
                   />
                 </div>
@@ -90,14 +90,14 @@ const ContactPage = () => {
                   <textarea
                     placeholder='Your Message*'
                     rows="3"
-                    className="w-full p-2 border border-black focus:border-black focus:border focus:outline-non bg-[#BE9A8073] placeholder:text-secondary"
+                    className="w-full Montserrat p-2 border border-black focus:border-black focus:border focus:outline-non bg-[#BE9A8073] placeholder:text-secondary"
                   />
                 </div>
 
                 {/* submit button */}
                 <div className='max-md:flex max-md:justify-center p-1 border border-secondary w-fit'>
                   <button
-                    className="bg-primary text-secondary hover:bg-secondary hover:text-primary border hover:border-primary p-1 px-12 text-sm font-semibold duration-300"
+                    className="bg-primary Montserrat text-secondary hover:bg-secondary hover:text-primary border hover:border-primary p-1 px-12 text-sm font-semibold duration-300"
                   >
                     Submit
                   </button>
@@ -112,13 +112,13 @@ const ContactPage = () => {
 
             {/* address */}
             <div className='mt-[55px] space-y-1'>
-              <h2 className='text-[23px] text-secondary font-[600]'>Address</h2>
-              <p className='text-[13px]'>
+              <h2 className='text-[23px] text-secondary font-[600] Montserrat'>Address</h2>
+              <p className='text-[13px] Montserrat'>
                 Regal Redince <br />
                 The Galleria Building, 3rd Floor,Suite 312, 4782 Jewelers Lane, <br />
                 Midtown, New York, NY 10022
               </p>
-              <p className='hover:text-secondary  text-primary flex items-center align-middle w-fit space-x-1 duration-300 cursor-pointer contacthover'>
+              <p className='hover:text-secondary Montserrat  text-primary flex items-center align-middle w-fit space-x-1 duration-300 cursor-pointer contacthover'>
                 <span>
                   Get Durection
                 </span>
@@ -130,16 +130,16 @@ const ContactPage = () => {
 
             {/* Contact */}
             <div className='space-y-1'>
-              <h2 className='text-[23px] text-secondary font-[600]'>Contact</h2>
+              <h2 className='text-[23px] text-secondary Montserrat font-[600]'>Contact</h2>
               <p className='text-[13px]'>
                 +1 (212) 555-9847, <br />
                 +1 (212) 555-7683
               </p>
-              <p className='hover:text-secondary text-primary flex items-center align-middle w-fit space-x-1 duration-300 cursor-pointer contacthover'>
+              <p className='hover:text-secondary Montserrat text-primary flex items-center align-middle w-fit space-x-1 duration-300 cursor-pointer contacthover'>
                 <span>
                   Whatsapp Us
                 </span>
-                <span className='text-[25px] duration-300 contactarrow pt-1'>
+                <span className='text-[25px] Montserrat duration-300 contactarrow pt-1'>
                   <LiaLongArrowAltRightSolid />
                 </span>
               </p>
@@ -147,8 +147,8 @@ const ContactPage = () => {
 
             {/* Hours */}
             <div className='space-y-1'>
-              <h2 className='text-[25px] text-secondary font-[600]'>Hours</h2>
-              <p className='text-[13px]'>
+              <h2 className='text-[25px] Montserrat text-secondary font-[600]'>Hours</h2>
+              <p className='text-[13px] Montserrat'>
                 Monday - Saturday <br />
                 10:00 AM To 07:00PM
               </p>
@@ -161,7 +161,7 @@ const ContactPage = () => {
       <div className='container mt-[50px]'>
 
         {/* title */}
-        <div className='text-center text-secondary titlestyle font-sans'>
+        <div className='text-center text-secondary titlestyle font-sans Montserrat'>
           Visit Our Jewellery Shop
         </div>
 
@@ -174,7 +174,7 @@ const ContactPage = () => {
 
 
           {/* contain/text */}
-          <div className='lg:text-[13.5px] text-secondary lg:p-4 max-lg:text-justify xl:text-[17px]'>
+          <div className='lg:text-[13.5px] Montserrat text-secondary lg:p-4 max-lg:text-justify xl:text-[17px]'>
             Our showroom at Regal Redince is a beacon of elegance and timeless craftsmanship, nestled in the heart of Midtown, New York. For generations, we have been a trusted name in the world of fine jewelry, blending luxury with innovation. At Regal Redince, every piece tells a story, celebrating the artistry and traditions of exceptional jewelry-making. Step into a world of unmatched beauty and sophistication, where every design reflects our commitment to quality and excellence.
           </div>
         </div>

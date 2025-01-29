@@ -84,13 +84,17 @@ const CategoriePage = () => {
         <div className="container h-full flex justify-center items-center">
           {/* Title */}
           <div className="flex justify-center items-center h-full w-full xl:pl-[700px] lg:pl-[530px] md:pl-[300px]">
-            <div className="md:w-fit md:h-fit max-md:text-center">
-              <h1 className="xl:text-[25px] text-[20px] bg-primary w-fit px-5 pb-1 font-[400] max-md:mx-auto">
+            <div className="md:w-fit md:h-fit max-md:text-center space-y-[26px]">
+
+              <h1 className="xl:text-[32px] bg-primary w-fit px-5 pb-1 max-md:mx-auto Montserrat">
                 Categories
               </h1>
-              <p className="mt-5 text-lg">Wedding season Offer flat 30% Off</p>
-              <p className="text-[40px] mt-5">Golden Necklace</p>
-              <p className="text-sm mt-5 max-md:text-justify">
+
+              <p className=" text-[20px] Marcellus">Wedding season Offer flat 30% Off</p>
+
+              <p className="text-[50px] Marcellus ">Golden Necklace</p>
+
+              <p className="max-md:text-justify Karla">
                 The grand allure of Gemstone & Polki jewellery lies in its
                 details, intricacy, and visual elegance. Each piece is weaved
                 together with graceful patterns and mesmerising rows of precious
@@ -98,8 +102,8 @@ const CategoriePage = () => {
                 intertwined with majestic grandeur, vibrant colours, and
                 exceptional designs.
               </p>
-              <div className="border border-primary p-1 w-fit mt-5 max-md:mx-auto">
-                <button className="bg-primary hover:bg-secondary text-secondary hover:text-primary border border-secondary hover:border-primary text-sm font-semibold px-5 py-1 duration-300">
+              <div className="border border-primary p-1 w-fit max-md:mx-auto">
+                <button className="bg-primary hover:bg-secondary text-secondary Karla hover:text-primary border border-secondary hover:border-primary text-sm font-semibold px-5 py-1 duration-300">
                   Shop Now
                 </button>
               </div>
@@ -126,7 +130,7 @@ const CategoriePage = () => {
               {categories.map((category, index) => (
                 <button
                   key={index}
-                  className={`text-lg items-center justify-center w-full border border-secondary p-2 hover:bg-primary hover:text-secondary duration-300 ${selectedCategory === category ? "bg-secondary text-primary" : ""
+                  className={`text-lg items-center justify-center w-full border Montserrat border-secondary p-2 hover:bg-primary hover:text-secondary duration-300 ${selectedCategory === category ? "bg-secondary text-primary" : ""
                     }`}
                   onClick={() => handleCategoryClick(category)}
                 >
@@ -136,12 +140,12 @@ const CategoriePage = () => {
             </div>
 
             {/* Product and Men/Women Category div */}
-            <div className="w-[80%]">
+            <div className="w-[80%] Montserrat">
 
               {/* Two buttons for gender */}
               <div className="grid grid-cols-2 gap-5 w-[95%]">
                 <button
-                  className={`w-full ${Gender === "men" ? "bg-secondary text-primary" : "bg-primary text-secondary"
+                  className={`w-full Montserrat ${Gender === "men" ? "bg-secondary text-primary" : "bg-primary text-secondary"
                     } hover:bg-secondary hover:text-primary text-center text-xl py-2 font-semibold duration-300`}
                   onClick={() => changeGender("men")}
                 >
@@ -149,7 +153,7 @@ const CategoriePage = () => {
                 </button>
 
                 <button
-                  className={`w-full ${Gender === "women" ? "bg-secondary text-primary" : "bg-primary text-secondary"
+                  className={`w-full Montserrat ${Gender === "women" ? "bg-secondary text-primary" : "bg-primary text-secondary"
                     } hover:bg-secondary  hover:text-primary text-center text-xl py-2 font-semibold duration-300`}
                   onClick={() => changeGender("women")}
                 >
@@ -158,7 +162,7 @@ const CategoriePage = () => {
               </div>
               {/* name of selected product category */}
               <div className="flex items-center my-5 gap-5">
-                <p className="text-3xl tracking-[4px] flex">
+                <p className="text-3xl tracking-[4px] flex Montserrat">
                   {selectedCategory}
                 </p>
                 <hr className="w-full border mt-2 border-secondary" />
@@ -208,12 +212,12 @@ const CategoriePage = () => {
                       {/* Name and Price */}
                       <div className="flex-wrap justify-end mt-2 relative">
                         <div className="flex justify-between">
-                          <h2 className="text-sm line-clamp-1 w-[70%] text-wrap">{product.name}</h2>
-                          <h2 className="text-sm text-nowrap font-semibold max-md:font-bold">{product.price} $</h2>
+                          <h2 className="text-sm line-clamp-1 w-[70%] text-wrap Montserrat">{product.name}</h2>
+                          <h2 className="text-sm text-nowrap font-semibold max-md:font-bold Montserrat">{product.price} $</h2>
                         </div>
 
                         {/* add to card button */}
-                        <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300">
+                        <button className="mt-3 Montserrat p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300">
                           Add to Cart
                         </button>
                       </div>
@@ -224,7 +228,7 @@ const CategoriePage = () => {
 
               {/* PaginationPage */}
               <div className=" mt-5">
-                <div className="mx-auto">
+                <div className="mx-auto Montserrat">
                   <PaginationPage totalPages={3} />
                 </div>
               </div>
@@ -242,7 +246,7 @@ const CategoriePage = () => {
               {/* Two buttons for gender */}
               <div className="grid grid-cols-2 gap-5 w-[95%]">
                 <button
-                  className={`w-full ${Gender === "men" ? "bg-secondary text-primary" : "bg-primary text-secondary"
+                  className={`w-full Montserrat ${Gender === "men" ? "bg-secondary text-primary" : "bg-primary text-secondary"
                     }  text-center text-xl py-2 font-semibold duration-300`}
                   onClick={() => changeGender("men")}
                 >
@@ -250,7 +254,7 @@ const CategoriePage = () => {
                 </button>
 
                 <button
-                  className={`w-full ${Gender === "women" ? "bg-secondary text-primary" : "bg-primary text-secondary"
+                  className={`w-full Montserrat ${Gender === "women" ? "bg-secondary text-primary" : "bg-primary text-secondary"
                     } text-center text-xl py-2 font-semibold duration-300`}
                   onClick={() => changeGender("women")}
                 >
@@ -269,7 +273,7 @@ const CategoriePage = () => {
                   {categories.map((category, index) => (
                     <button
                       key={index}
-                      className={`text-lg items-center justify-center w-full border border-secondary p-2 duration-300 ${selectedCategory === category ? "bg-secondary text-primary" : ""
+                      className={`text-lg Montserrat items-center justify-center w-full border border-secondary p-2 duration-300 ${selectedCategory === category ? "bg-secondary text-primary" : ""
                         }`}
                       onClick={() => handleCategoryClick(category)}
                     >
@@ -282,7 +286,7 @@ const CategoriePage = () => {
               {/* name of selected product category */}
               <div className="flex items-center md:my-5 my-10">
                 {/* shoe filter name */}
-                <p className="text-2xl tracking-[3px] font-semibold">
+                <p className="text-[35px] font-[600] Montserrat tracking-[3px]">
                   {selectedCategory}
                 </p>
                 <hr className="border w-full ml-3 text-2xl md:mt-2 border-gray-500" />
@@ -327,11 +331,11 @@ const CategoriePage = () => {
                       {/* Name and Price */}
                       <div className="flex-wrap justify-end mt-2 relative">
                         <div className="flex justify-between">
-                          <h2 className="text-sm line-clamp-1 w-[70%] text-wrap">{product.name}</h2>
-                          <h2 className="text-sm text-nowrap font-semibold max-md:font-bold">{product.price} $</h2>
+                          <h2 className="text-sm line-clamp-1 w-[70%] text-wrap Montserrat">{product.name}</h2>
+                          <h2 className="text-sm text-nowrap font-semibold max-md:font-bold Montserrat">{product.price} $</h2>
                         </div>
 
-                        <button className="mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 text-[14px]">
+                        <button className="Montserrat mt-3 p-1 w-full justify-center flex bg-primary text-secondary border-2 font-semibold border-secondary hover:text-primary hover:bg-secondary hover:border-primary duration-300 text-[14px]">
                           Add to Cart
                         </button>
                       </div>
@@ -342,7 +346,7 @@ const CategoriePage = () => {
 
               {/* PaginationPage */}
               <div className=" mt-5">
-                <div className="mx-auto">
+                <div className="mx-auto Montserrat">
                   <PaginationPage totalPages={3} />
                 </div>
               </div>
