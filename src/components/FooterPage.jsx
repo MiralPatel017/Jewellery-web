@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const FooterPage = () => {
   return (
     <div className='bg-[#D5DDDD] text-secondary pt-12 pb-3 text-secondary'>
-      <div className='grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 justify-between  xl:px-10 lg:mx-[62px] md:px-8 px-4 2xl:container 2xl:mx-auto'>
+      <div className='grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 justify-between  xl:px-10 lg:mx-[62px] md:px-8 px-4 2xl:px-[50px] 2xl:mx-auto'>
 
         {/* first section */}
         <div>
