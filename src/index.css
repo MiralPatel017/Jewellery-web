@@ -45,6 +45,10 @@
     font-family: 'Marcellus SC';
 } */
 
+button{
+    cursor: pointer;
+}
+
 .maindiv:hover div img {
     transform: scale(1.1);
 }
