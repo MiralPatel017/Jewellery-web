@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './NavPage'
+import NavPage from './NavPage'
 import FooterPage from './FooterPage'
 
 const OrderTrackingPage = () => {
@@ -15,12 +15,14 @@ const OrderTrackingPage = () => {
         <div>
 
             {/* navbar */}
-            <div className='container shadow-md'>
-                <Navbar />
+            <div className="shadow-md bg-white w-full fixed top-0 z-50">
+                <div className='container'>
+                    <NavPage />
+                </div>
             </div>
 
             {/* main container */}
-            <div className=' container mt-[50px]'>
+            <div className=' container mt-[160px] Karla'>
 
                 {/* title */}
                 <div className=" max-md:text-center max-lg:text-3xl lg:text-[40px] font-[600] Montserrat">
@@ -98,7 +100,7 @@ const OrderTrackingPage = () => {
                                 <div className='flex'>
 
                                     {/* Purity & Qty */}
-                                    <div className='w-[80%] md:space-y-3 max-md:space-y-1 max-md:text-xs'>4
+                                    <div className='w-[80%] md:space-y-3 max-md:space-y-1 max-md:text-xs'>
 
                                         {/* Purity  */}
                                         <p className='gap-1 flex'>
@@ -122,14 +124,14 @@ const OrderTrackingPage = () => {
                                             </p>
                                         </p>
                                     </div>
-
-                                    {/* price */}
-                                    <div className='w-[20%]'>
-                                        <p className='text-end max-md:text-sm max-md:font-bold font-semibold '>
-                                            548.3 $
-                                        </p>
-                                    </div>
                                 </div>
+                            </div>
+
+                            {/* price */}
+                            <div className='w-[10%] flex items-center justify-end'>
+                                <p className='text-end max-md:text-sm max-md:font-bold text-nowrap font-semibold '>
+                                    548.3 $
+                                </p>
                             </div>
                         </div>
                     </div>

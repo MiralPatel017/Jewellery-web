@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Navbar from './NavPage';
+import NavPage from './NavPage';
 import FooterPage from './FooterPage';
 
 
@@ -45,15 +45,17 @@ const ServiceDetailsPage = () => {
         <div>
 
             {/* main container */}
-            <div className='container shadow-md'>
-                <Navbar />
+            <div className="shadow-md bg-white w-full fixed top-0 z-50">
+                <div className='container'>
+                    <NavPage />
+                </div>
             </div>
 
             {/* product image and details */}
-            <div className='container mt-[50px]'>
+            <div className='container mt-[160px]'>
                 <div className="grid grid-cols-2 max-lg:grid-cols-1">
                     <div className='w-full max-xl:flex max-xl:justify-center'>
-                        <img src={service.imgs} alt={service.name} className='lg:w-[80%] md:w-[50%]' />
+                        <img src={service.imgs} alt={service.name} className='lg:w-[90%] h-full md:w-[50%]' />
                     </div>
 
                     <div className='max-lg:mt-5'>
@@ -61,7 +63,7 @@ const ServiceDetailsPage = () => {
                             {service.name}
                         </div>
 
-                        <div className='max-lg:text-justify max-lg:mt-3 max-lg:text-sm max-xl:text-[12.5px] lg:mt-5'>
+                        <div className='max-lg:text-justify max-lg:mt-3 max-lg:text-sm text-[16.935px] max-xl:text-[12.5px] lg:mt-5'>
                             {service.dec}
                         </div>
                     </div>
@@ -84,7 +86,7 @@ const ServiceDetailsPage = () => {
                                 name="firstname"
                                 id="firstname"
                                 placeholder='First Name*'
-                                className='border border-black text-secondary placeholder:text-secondary w-full  px-3 py-1.5 text-sm rounded-lg '
+                                className='border border-black text-secondary placeholder:text-secondary w-full  px-3 py-2 text-sm rounded-lg '
                             />
                         </div>
 
@@ -95,7 +97,7 @@ const ServiceDetailsPage = () => {
                                 name="lastname"
                                 id="lastname"
                                 placeholder='Last Name*'
-                                className='border border-black text-secondary placeholder:text-secondary w-full  px-3 py-1.5 text-sm rounded-lg '
+                                className='border border-black text-secondary placeholder:text-secondary w-full  px-3 py-2 text-sm rounded-lg '
                             />
                         </div>
                     </div>
@@ -136,7 +138,7 @@ const ServiceDetailsPage = () => {
                                 name="phonenumber"
                                 id="phonenumber"
                                 placeholder='Phone Number*'
-                                className='border border-black text-secondary placeholder:text-secondary w-full  px-3 py-1.5 text-sm rounded-lg '
+                                className='border border-black text-secondary placeholder:text-secondary w-full  px-3 py-2 text-sm rounded-lg '
                                 required
                             />
                         </div>
@@ -148,7 +150,7 @@ const ServiceDetailsPage = () => {
                                 name="email"
                                 id="email"
                                 placeholder='Email*'
-                                className='border border-black text-secondary placeholder:text-secondary w-full  px-3 py-1.5 text-sm rounded-lg '
+                                className='border border-black text-secondary placeholder:text-secondary w-full  px-3 py-2 text-sm rounded-lg '
                                 required
                             />
                         </div>
@@ -156,7 +158,7 @@ const ServiceDetailsPage = () => {
 
                     {/* submit button */}
                     <div className='flex justify-center pt-5'>
-                        <button className='bg-primary px-10 py-2 text-sm rounded-lg font-bold hover:bg-secondary hover:text-primary duration-300'
+                        <button className='bg-primary px-12 py-[9px] text-secondary text-sm rounded-lg font-bold hover:bg-secondary hover:text-primary duration-300'
                             type='submit'>
                             Submit
                         </button>

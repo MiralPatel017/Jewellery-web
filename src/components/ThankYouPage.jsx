@@ -33,7 +33,7 @@ const ThankYouPage = () => {
 
       {/* main container */}
       <div className='mt-[160px] container'>
-        <div className='border border-secondary md:p-10 max-md:p-5 md:px-12 md:mx-5'>
+        <div className='border border-secondary md:p-10 max-md:p-5'>
 
           {/* title */}
           <div className='text-center md:text-xl font-semibold max-md:font-bold max-md:text-lg text-secondary Karla'>

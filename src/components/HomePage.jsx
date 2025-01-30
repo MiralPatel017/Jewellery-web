@@ -735,7 +735,7 @@ const HomePage = () => {
                 <div>
                     <h2 className='titlestyle Montserrat text-center text-secondary'>Testimonial</h2>
                 </div>
-                <div className='gap-[25px]'>
+                <div className='md:gap-[25px]'>
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={25}
@@ -767,13 +767,13 @@ const HomePage = () => {
                         {reviews.map((item) => (
                             <SwiperSlide key={item.id} className="duration-300 pb-10">
                                 {/* customer reviews */}
-                                <div className='mt-[50px] max-md:w-[320px] max-md:mx-auto'>
+                                <div className='mt-[50px] max-md:w-[320px] max-md:mx-auto max-sm:w-[280px]'>
 
                                     {/* main div */}
                                     <div className='border relative border-black px-4 py-5 mt-[30px]'>
 
                                         {/* image */}
-                                        <div className='absolute flex justify-center w-full -top-[40px] pr-[10px]'>
+                                        <div className='absolute flex justify-center w-full -top-[40px] max-sm:pr-[40px] sm:pr-[10px]'>
                                             <img src={item.perimg} alt="" className='w-[90px]' />
                                         </div>
 

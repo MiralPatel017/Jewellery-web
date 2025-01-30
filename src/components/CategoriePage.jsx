@@ -269,7 +269,7 @@ const CategoriePage = () => {
 
 
                 {/* Categories List */}
-                <div className="grid grid-cols-3 gap-5 mt-5">
+                <div className="grid grid-cols-3 max-sm:grid-cols-2 gap-5 mt-5">
                   {categories.map((category, index) => (
                     <button
                       key={index}

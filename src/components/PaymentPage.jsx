@@ -14,6 +14,7 @@ const PaymentPage = () => {
         // setPaymentMethod(selectedOption)
 
     }
+    const [selectedOptionAddr, setSelectedOptionAddr] = React.useState("same");
     const [selectedOption, setSelectedOption] = React.useState('Credit Card');
     return (
         <div>
@@ -156,6 +157,35 @@ const PaymentPage = () => {
                                     {/* text */}
                                     <div className='Karla'>
                                         Select the address that matches your card or payment method.
+                                    </div>
+
+                                    {/* select address */}
+                                    <div className="bg-[#BEBCBD] p-4 lg:px-12 text-[#3C4242x] Karla w-full">
+                                        <div className="space-y-3">
+                                            <label className="flex items-center space-x-2 cursor-pointer">
+                                                <input
+                                                    type="radio"
+                                                    name="shipping"
+                                                    value="same"
+                                                    checked={selectedOptionAddr === "same"}
+                                                    onChange={() => setSelectedOptionAddr("same")}
+                                                    className="w-4 h-4 accent-[#2C3E50]"
+                                                />
+                                                <span className="text-gray-900">Same as Billing address</span>
+                                            </label>
+                                            <hr className="border-gray-400" />
+                                            <label className="flex items-center space-x-2 cursor-pointer">
+                                                <input
+                                                    type="radio"
+                                                    name="shipping"
+                                                    value="different"
+                                                    checked={selectedOptionAddr === "different"}
+                                                    onChange={() => setSelectedOptionAddr("different")}
+                                                    className="w-4 h-4 accent-[#2C3E50]"
+                                                />
+                                                <span className="text-gray-900">Use a different shipping address</span>
+                                            </label>
+                                        </div>
                                     </div>
 
                                     {/* payment method */}

@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './NavPage'
+import NavPage from './NavPage'
 import { Link } from 'react-router-dom'
 import FooterPage from './FooterPage'
 const ProductDetailsPage = () => {
@@ -13,12 +13,14 @@ const ProductDetailsPage = () => {
     return (
         <div>
             {/* navbar */}
-            <div className='container shadow-md'>
-                <Navbar />
+            <div className="shadow-md bg-white w-full fixed top-0 z-50">
+                <div className='container'>
+                    <NavPage />
+                </div>
             </div>
 
             {/* mian container (Product details and images) */}
-            <div className='container mt-[50px]'>
+            <div className='container mt-[160px] text-secondary Karla'>
 
                 {/* grid main div */}
                 <div className='grid grid-cols-2 max-lg:grid-cols-1 lg:gap-7'>
@@ -50,7 +52,7 @@ const ProductDetailsPage = () => {
                     {/* product details div */}
                     <div className='max-lg:mt-10 xl:space-y-5 max-lg:space-y-5 max-xl:space-y-3'>
 
-                        <div className='font-semibold text-xl'>
+                        <div className='font-semibold md:text-[30px] text-[25px]'>
                             Annalise Layered Diamond Necklace
                         </div>
 

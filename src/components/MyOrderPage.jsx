@@ -28,7 +28,7 @@ const MyOrderPage = () => {
                 </div>
 
                 {/* three button div */}
-                <div className='mt-7 bg-[#F5F5F5] p-2'>
+                <div className='mt-7 bg-[#F5F5F5] p-3'>
                     <div className='flex gap-5 max-md:text-[14px] max-sm:gap-3 max-md:justify-center max-md:py-5'>
 
                         {/* Shipping button */}

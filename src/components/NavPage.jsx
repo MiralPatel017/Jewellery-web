@@ -16,6 +16,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [isLogout, setIsLogout] = useState(false);
+    const [showSearch, setShowSearch] = useState(false);
 
     const menuRef = useRef(null);
     const dropdownRef = useRef(null);
@@ -43,7 +44,9 @@ const Navbar = () => {
     return (
         <nav className="bg-white md:h-[80px] z-50 md:justify-around flex items-center max-lg:py-4 text-[17px]">
             <div className="flex max-lg:justify-start items-center max-lg:w-full">
-                <img src="/main-logo.svg" alt="logo" className="w-[80px] max-lg:w-[70px] border-transparent" />
+                <Link to="/">
+                    <img src="/main-logo.svg" alt="logo" className="w-[80px] max-lg:w-[70px] border-transparent" />
+                </Link>
             </div>
 
             {/* Desktop Menu */}
@@ -57,11 +60,41 @@ const Navbar = () => {
                 </li>
 
                 <li className="flex items-center gap-3">
-                    <Link><IoMdSearch className="text-[22px]" /></Link>
+                    <div className="flex items-center space-x-5">
+                        {/* {/ Search (Hidden on mobile) /} */}
+                        <div
+                            className="relative group hidden lg:block"
+                            onMouseEnter={() => setShowSearch(true)}
+                            onMouseLeave={() => setShowSearch(false)}
+                        >
+                            <div className="relative w-[40px] h-[40px]">
+                                <input
+                                    type="text"
+                                    placeholder="Search..."
+                                    className={`absolute right-0 top-0 bg-white text-[#1F4529] placeholder-[#1F4529]/60 pl-3 pr-3 py-2 rounded-md outline-none transition-all duration-300
+                                        ${showSearch ? "w-[250px] opacity-100 visible" : "w-[40px] opacity-0 invisible"}
+                                        border border-gray-200`}
+                                />
+                                <div
+                                    className={`absolute right-4  top-1/2 -translate-y-1/2 pointer-events-none transition-opacity duration-300
+                                        ${showSearch ? "opacity-100" : "opacity-0"}`}
+                                >
+                                    <IoMdSearch className="text-[#1F4529] text-[24px]" />
+                                </div>
+                                <div
+                                    className={`absolute right-0 top-0 w-[40px] h-[40px] flex items-center justify-center border border-white rounded-md transition-all duration-300
+                                        ${showSearch ? "opacity-0 invisible" : "opacity-100 visible"}`}
+                                >
+                                    <IoMdSearch className=" text-[24px]" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <Link to='/WishListPage'><LuHeart className={`${isActive("/WishListPage") ? "text-primary" : ""} text-[22px]`} /></Link>
                     <Link to="/CartPage"><IoCartOutline className={`${isActive("/CartPage") ? "text-primary" : ""} text-[22px]`} /></Link>
 
-                    <div className="relative" ref={dropdownRef} >
+                    <div className="relative " ref={dropdownRef} >
                         {/* User Icon */}
                         <FaRegCircleUser className={`${isOpen ? "text-primary" : ""} text-[22px] cursor-pointer`} onClick={toggleDropdown} />
 
@@ -69,16 +102,16 @@ const Navbar = () => {
                         {isOpen && (
                             <div className="absolute right-0 top-10 w-64 bg-[#b98e6d] text-black p-4 rounded-lg shadow-lg transition-opacity duration-300">
                                 <div className="flex items-center space-x-3 pb-2 mb-2">
-                                    <img src="/user-profile.png" alt="User" className="w-12 h-12 rounded-full" />
+                                    <img src="/user-profile.png" alt="User" className="w-12 h-12 rounded-full cursor-pointer" />
                                     <div>
-                                        <h3 className="text-md font-semibold">James Johnson</h3>
-                                        <p className="text-sm text-secondary">james09@gmail.com</p>
+                                        <h3 className="text-md font-semibold cursor-pointer">James Johnson</h3>
+                                        <p className="text-sm text-secondary cursor-pointer">james09@gmail.com</p>
                                     </div>
                                 </div>
                                 <ul className="space-y-3 px-5">
                                     <li>
                                         <Link to='/ProfilePage'>
-                                            <button className="flex items-center space-x-2 cursor-pointer hover:text-white">
+                                            <button className={`${isActive("/ProfilePage") ? "underline underline-offset-[3px] text-white" : ""}  flex items-center space-x-2 cursor-pointer hover:text-white`}>
                                                 <FaRegUser />
                                                 <span>My Profile</span>
                                             </button>
@@ -86,7 +119,7 @@ const Navbar = () => {
                                     </li>
                                     <li>
                                         <Link to='/MyOrderPage'>
-                                            <button className="flex items-center space-x-2 cursor-pointer hover:text-white">
+                                            <button className={`${isActive("/MyOrderPage") ? "underline underline-offset-[3px] text-white" : ""}  flex items-center space-x-2 cursor-pointer hover:text-white`}>
                                                 <MdOutlineInventory />
                                                 <span>My Order</span>
                                             </button>
@@ -94,7 +127,7 @@ const Navbar = () => {
                                     </li>
                                     <li>
                                         <Link to='/WishListPage'>
-                                            <button className="flex items-center space-x-2 cursor-pointer hover:text-white">
+                                            <button className={`${isActive("/WishListPage") ? "underline underline-offset-[3px] text-white" : ""}  flex items-center space-x-2 cursor-pointer hover:text-white`}>
                                                 <FaRegHeart />
                                                 <span>My Wishlist</span>
                                             </button>
@@ -102,7 +135,7 @@ const Navbar = () => {
                                     </li>
                                     <li>
                                         <Link to='/OrderTrackingPage'>
-                                            <button className="flex items-center space-x-2 cursor-pointer hover:text-white">
+                                            <button className={`${isActive("/OrderTrackingPage") ? "underline underline-offset-[3px] text-white" : ""}  flex items-center space-x-2 cursor-pointer hover:text-white`}>
                                                 <MdOutlineTrackChanges />
                                                 <span>Order Tracking</span>
                                             </button>
@@ -142,7 +175,7 @@ const Navbar = () => {
                                 <ul className="space-y-3 text-[18px] px-5">
                                     <li>
                                         <Link to='/ProfilePage'>
-                                            <button className="flex items-center space-x-2 cursor-pointer hover:text-white">
+                                            <button className={`${isActive("/ProfilePage") ? "underline underline-offset-[3px] text-white" : ""}  flex items-center space-x-2 cursor-pointer hover:text-white`}>
                                                 <FaRegUser />
                                                 <span>My Profile</span>
                                             </button>
@@ -150,7 +183,7 @@ const Navbar = () => {
                                     </li>
                                     <li>
                                         <Link to='/MyOrderPage'>
-                                            <button className="flex items-center space-x-2 cursor-pointer hover:text-white">
+                                            <button className={`${isActive("/MyOrderPage") ? "underline underline-offset-[3px] text-white" : ""}  flex items-center space-x-2 cursor-pointer hover:text-white`}>
                                                 <MdOutlineInventory />
                                                 <span>My Order</span>
                                             </button>
@@ -158,7 +191,7 @@ const Navbar = () => {
                                     </li>
                                     <li>
                                         <Link to='/WishListPage'>
-                                            <button className="flex items-center space-x-2 cursor-pointer hover:text-white">
+                                            <button className={`${isActive("/WishListPage") ? "underline underline-offset-[3px] text-white" : ""}  flex items-center space-x-2 cursor-pointer hover:text-white`}>
                                                 <FaRegHeart />
                                                 <span>My Wishlist</span>
                                             </button>
@@ -166,7 +199,7 @@ const Navbar = () => {
                                     </li>
                                     <li>
                                         <Link to='/OrderTrackingPage'>
-                                            <button className="flex items-center space-x-2 cursor-pointer hover:text-white">
+                                            <button className={`${isActive("/OrderTrackingPage") ? "underline underline-offset-[3px] text-white" : ""}  flex items-center space-x-2 cursor-pointer hover:text-white`}>
                                                 <MdOutlineTrackChanges />
                                                 <span>Order Tracking</span>
                                             </button>

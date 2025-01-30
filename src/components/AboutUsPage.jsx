@@ -35,7 +35,7 @@ const AboutUsPage = () => {
       </div>
 
       {/* about us section */}
-      <div className='mt-[50px] container'>
+      <div className='mt-[80px] container'>
 
         {/* title */}
         <div className='w-full mb-10 text-center'>
@@ -75,7 +75,7 @@ const AboutUsPage = () => {
 
 
       {/* Our Vision section */}
-      <div className='mt-[50px] container'>
+      <div className='mt-[80px] container'>
         {/* title */}
         <div className='w-full mb-10 text-center'>
           <h2 className='titlestyle w-full Montserrat'>
@@ -107,7 +107,7 @@ const AboutUsPage = () => {
 
 
       {/* Our Values section */}
-      <div className='mt-[50px] container'>
+      <div className='mt-[80px] container'>
         {/* title */}
         <div className='titlestyle w-full mb-10 text-center Montserrat'>
           <h2 className='titlestyle w-full'>
@@ -136,8 +136,8 @@ const AboutUsPage = () => {
       </div>
 
 
-      {/* Regal Rediance section */}
-      <div className='mt-[50px] bg-[#BE9A807A] pb-[50px]'>
+      {/*  Why Regal Rediance ? section */}
+      <div className='mt-[80px] bg-[#BE9A807A] pb-[50px]'>
         <div className='container'>
 
           {/* title */}
@@ -149,7 +149,7 @@ const AboutUsPage = () => {
 
           {/* 4 card */}
           <div className='flex justify-center'>
-            <div className="grid grid-cols-4 max-xl:grid-cols-2 gap-5">
+            <div className="grid grid-cols-4 max-xl:grid-cols-2 md:gap-[40px] gap-7">
 
               {/* first card */}
               <div className='flex-wrap justify-center md:w-[250px]'>
