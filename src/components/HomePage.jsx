@@ -263,9 +263,9 @@ const HomePage = () => {
                         <h3 className='lg:text-[25px] mt-3 text-white text-center Marcellus'>Elegance begins with the perfect jewel.</h3>
                         <div className='flex justify-center mt-5'>
                             <p className='Karla border border-primary h-fit w-fit p-1'>
-                                <div className='Karla  border bg-primary font-bold text-secondary px-[25px] py-[1px] hover:bg-secondary hover:border border-primary hover:text-primary  duration-300 Karla' >
+                                <button className='Karla  border bg-primary font-bold text-secondary px-[25px] py-[1px] hover:bg-secondary hover:border border-primary hover:text-primary  duration-300 Karla' >
                                     Collection
-                                </div>
+                                </button>
                             </p>
                         </div>
                     </div>
