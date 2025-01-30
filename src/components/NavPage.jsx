@@ -67,7 +67,7 @@ const Navbar = () => {
                             onMouseEnter={() => setShowSearch(true)}
                             onMouseLeave={() => setShowSearch(false)}
                         >
-                            <div className="relative w-[40px] h-[40px]">
+                            <div className="relative w-[40px] h-[30px]">
                                 <input
                                     type="text"
                                     placeholder="Search..."
@@ -82,7 +82,7 @@ const Navbar = () => {
                                     <IoMdSearch className="text-[#1F4529] text-[24px]" />
                                 </div>
                                 <div
-                                    className={`absolute right-0 top-0 w-[40px] h-[40px] flex items-center justify-center border border-white rounded-md transition-all duration-300
+                                    className={`absolute right-0 top-0 w-[40px] h-[30px] flex items-center justify-center border border-white rounded-md transition-all duration-300
                                         ${showSearch ? "opacity-0 invisible" : "opacity-100 visible"}`}
                                 >
                                     <IoMdSearch className=" text-[24px]" />
